@@ -41,9 +41,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-/* body {
-	line-height: 1;
-} */
+body {
+	line-height: 1.6;/* se cambio a 1.6 estaba a 1 */
+}
 ol, ul {
 	list-style: none;
 }
@@ -71,7 +71,7 @@ table {
     HTML - BODY
 --------------------------------------------------- */
 html{
-    line-height: 1.6;
+    /* line-height: 1.6; */ /* Se reemplaza por el del body */
     scroll-behavior: smooth;
 }
 body{
@@ -102,22 +102,36 @@ a{
 img{
     max-width: 100%;
 }
+button{
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 /* ------------------------------------------------
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
     margin: 25px 0;
+    /* margin: 48px 0; */
 }
 /* ------------------------------------------------
     ARTICLE - TAG
 --------------------------------------------------- */
 .articleContent{
-    /* padding: 5px 0; */
     margin: 10px 0;
+    /* padding: 5px 0; */
 }
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
-.row-container{}
-.col-container{}
+.row-container{
+    width: 100%;
+}
+.col-container{
+    width: 100%;
+}
+/* ------------------------------------------------
+    
+--------------------------------------------------- */
 
