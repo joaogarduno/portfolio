@@ -32,7 +32,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -41,8 +41,18 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
+html{
+    /* line-height: 1.6; */ /* Se reemplaza por el del body */
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* font-size: 16px; */
+}
 body {
-	line-height: 1.6;/* se cambio a 1.6 estaba a 1 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+	line-height: 1.6; /* se cambio a 1.6 estaba a 1 */
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -70,21 +80,15 @@ table {
 /* ------------------------------------------------
     HTML - BODY
 --------------------------------------------------- */
-html{
-    /* line-height: 1.6; */ /* Se reemplaza por el del body */
-    scroll-behavior: smooth;
-}
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    color: crimson;
-}
+/* se quita el html y el body y se colocan dentro del RESET.CSS */
 /* ------------------------------------------------
     TITLES
 --------------------------------------------------- */
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* font-size: 25px; */
     letter-spacing: .5px;
 }
 /* ------------------------------------------------
@@ -104,7 +108,7 @@ img{
 }
 button{
     border: none;
-    font-size: 12px;
+    /* font-size: 12px; */
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -131,7 +135,133 @@ button{
 .col-container{
     width: 100%;
 }
-/* ------------------------------------------------
-    
---------------------------------------------------- */
+/*========================================================
+    CONTENIDO - NAV
+==========================================================*/
+.navContent{
+    /* outline: 1px solid red; */
+    position: relative;
+    background-color: #191022;
+}
 
+.navContent .container{
+    display: flex;
+    justify-content: space-between; /* horizontal */
+    align-items: center;/* vertical */
+}
+/* LOGO */
+.navContent .nav__logo{
+    /* outline: 1px solid red; */
+    font-size: 4.1rem;/* 40px */
+    font-family: 'Yellowtail', cursive;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    /* color: #F3A371; */
+    /* width: 30%; */
+}
+.nav__logo a{
+    color: #F3A371;
+}
+/* .nav__logo a span{} */
+
+/* BURGER LINES */
+.navContent .nav__burger{
+    display: block;
+    /* outline: 1px solid red; */
+    cursor: pointer;
+    /* background-color: #274569; */
+}
+.navContent .nav__burger .line{
+    background-color: #F3A371;
+    margin: 5px;
+    height: 3px;
+    width: 40px;
+    transition: all 0.3s ease;
+}
+/* MENU LINKS */
+/* .navContent .nav__menu{} */
+/* .navContent{} */
+.nav__menu--ul{
+    position: absolute;
+    top: 6.5rem;
+    right: 0;
+    height: 85vh;
+    width: 75vw;
+    background-color: #191022;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+.navContent .nav__menu--ul li{
+    /* padding: 20px 10px; */
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.navContent .nav__menu--ul li a{
+    border-bottom: 1px solid #F3A371;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #F3A371;
+}
+.navContent .nav__menu--ul a:hover{
+    background-color: rgba(216, 222, 233, 0.3);
+    transition: all 0.4s ease;
+    /* padding: 5px; */
+    color: #191022;
+}
+/*  */
+.nav-active{
+    transform: translateX(0%);
+}
+/* BURGER ANIMATION */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* COLORES DEL PROYECTO 
+#F3A371
+#1B6683
+#274569
+#191022
+ */
+ /* @media screen and (min-width: 320px){} */
+ /* @media screen and (min-width: 480px){} */
+ @media screen and (min-width: 768px){
+     /* CONTAINER */
+     /* .container{
+         width: 95%;
+     } */
+     /* BURGER */
+    .navContent .nav__burger{
+        display: none;
+    }
+    /* MENU - LINKS */
+    .navContent .nav__menu--ul{
+        flex-direction: row;
+        position: unset;
+        /* position: initial; */
+        /* position: static; */
+        /* position: sticky; */
+        height: 10vh;
+    }
+ }
+ @media screen and (min-width: 1024px){
+     .container{
+         width: 95%;
+     }
+ }
+ @media screen and (min-width: 1200px){
+     .container{
+         width: 90%;
+     }
+ }
