@@ -49,6 +49,8 @@ footer, header, hgroup, menu, nav, section {
 }
 /* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
 html{
+    background-color: #191022;
+    color: #f9f2ff;
     /* line-height: 1.6; */ /* Se reemplaza por el del body */
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -122,6 +124,7 @@ button{
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
+    /* margin: 45px 0; */
     margin: 25px 0;
     /* margin: 48px 0; */
 }
@@ -140,6 +143,7 @@ button{
 }
 .col-container{
     width: 100%;
+    margin: 10px 0;
 }
 /*========================================================
     CONTENIDO - NAV
@@ -176,6 +180,12 @@ button{
     cursor: pointer;
     /* background-color: #274569; */
 }
+/* COLORES DEL PROYECTO 
+#F3A371
+#1B6683
+#274569
+#191022
+ */
 .navContent .nav__burger .line{
     background-color: #F3A371;
     margin: 5px;
@@ -192,7 +202,8 @@ button{
     right: 0;
     height: 85vh;
     width: 75vw;
-    background-color: #191022;
+    background-color: #274569;
+    /* background-color: #191022; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -253,12 +264,12 @@ button{
 .col-contanier .banner__button{
     text-transform: capitalize;
     background-color: #F3A371;
-    /* width: 100px; */
-    width: 40%;
+    width: 45%;
     height: 40px;
     outline: none;
     border-radius: 0.5rem;
-    margin: 10px 0;
+    margin-bottom: 2.0rem;
+    /* margin: 10px 0; */
 }
 /* IMG */
 .banner__colImg{
@@ -268,17 +279,43 @@ button{
 .banner__figure{
     background-color: rgba(243, 163, 113, 0.8);
     border-radius: 300% 900% 900% 300% / 300% 600% 500% 800%;
-    /* width: 80%; */
+    width: 80%;
+    margin: 0 auto;
 }
 .banner__figure .banner__figure--img{
-    /* border: 1px solid red; */
-    border-radius: 60%;
-    /* width: 80%; */
+    border-radius: 80%;
 }
 /*========================================================
     MAIN - mainContent - SECTION - aboutContent
 ==========================================================*/
-/* MEDIAQUERIES */
+/* .aboutContent{} */
+.about__article{
+    border-left: 1px solid #F3A371;
+}
+.about__article--h3{
+    padding: 10px;
+    font-size: 4.0rem;
+    text-transform: capitalize;
+    
+}
+.about__article--p{
+    padding: 10px;
+}
+.about__article--img{
+    /* margin: 1.0rem 0 0 2.0rem; */
+    margin-top: 2.0rem;
+    margin-left: 1.0rem;
+    border-radius: 30%;
+    padding: 1px;
+    /* color: #f0f0f0; */
+    width: 3.0rem;
+    height: 3.0rem;
+    background-color: #F3A371;
+}
+
+/*========================================================
+    MEDIAQUERIES
+==========================================================*/
 /* @media screen and (min-width: 320px){} */
 /* @media screen and (min-width: 480px){} */
 @media screen and (min-width: 768px){
