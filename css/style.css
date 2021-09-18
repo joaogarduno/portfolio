@@ -6,11 +6,14 @@ Version: 1.0
 License:
 
 */
-/* COLORES DEL PROYECTO 
+/* 
+
+-> COLORES DEL PROYECTO 
 #F3A371
 #1B6683
 #274569
 #191022
+
  */
 *, ::after, ::before{
     box-sizing: border-box;
@@ -304,7 +307,7 @@ button{
 .about__article--img{
     /* margin: 1.0rem 0 0 2.0rem; */
     margin-top: 2.0rem;
-    margin-left: 1.0rem;
+    margin-left: 1.5rem;
     border-radius: 30%;
     padding: 1px;
     /* color: #f0f0f0; */
@@ -312,6 +315,10 @@ button{
     height: 3.0rem;
     background-color: #F3A371;
 }
+/*========================================================
+    CONTENIDO - WORK - PORTFOLIO
+==========================================================*/
+
 
 /*========================================================
     MEDIAQUERIES
