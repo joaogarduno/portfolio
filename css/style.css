@@ -47,7 +47,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section{
 	display: block;
 }
 /* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
@@ -84,6 +84,7 @@ table {
     CONTAINER
 --------------------------------------------------- */
 .container{
+    outline: 1px solid red;
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
@@ -101,6 +102,8 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     /* font-size: 25px; */
     letter-spacing: .5px;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
 }
 /* ------------------------------------------------
     TAGS -  HTML5
@@ -127,6 +130,7 @@ button{
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
+    outline: 1px solid red;
     /* margin: 45px 0; */
     margin: 25px 0;
     /* margin: 48px 0; */
@@ -135,18 +139,23 @@ button{
     ARTICLE - TAG
 --------------------------------------------------- */
 .articleContent{
-    margin: 10px 0;
+    outline: 1px solid red;
+    /* margin: 1.0rem 0; */
     /* padding: 5px 0; */
 }
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
 .row-container{
+    outline: 1px solid red;
     width: 100%;
+    margin: 2.0rem 0;
 }
 .col-container{
+    outline: 1px solid red;
     width: 100%;
-    margin: 10px 0;
+    padding: 1.0rem;
+    /* margin: 10px 0; */
 }
 /*========================================================
     CONTENIDO - NAV
@@ -298,8 +307,7 @@ button{
 .about__article--h3{
     padding: 10px;
     font-size: 4.0rem;
-    text-transform: capitalize;
-    
+    /* text-transform: capitalize; */
 }
 .about__article--p{
     padding: 10px;
@@ -318,8 +326,74 @@ button{
 /*========================================================
     CONTENIDO - WORK - PORTFOLIO
 ==========================================================*/
-
-
+.workContent{
+    /* outline: 1px solid red; */
+}
+/* ARTICLE */
+.colArticle{}
+.work__colArticle--article{}
+.work__article--h4{
+    text-transform: capitalize;
+    font-size: 4.0rem;
+}
+.work__article--bloc{
+    border-left: 1px solid #F3A371;
+}
+.work__articleBloc--p{
+    /* margin: 1.5rem 0; */
+    /* margin: 1.5rem 0; */
+}
+/* CONTENT - PORTFOLIO */
+.work__box1{
+    background-color: #F3A371;
+    /* border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%; */
+}
+/*========================================================
+    CONTENIDO - CONTACT - INFO CONTACT
+==========================================================*/
+.contactContent{}
+.contact__profile{
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 100% 100% 100% 100% / 100% 100% 15% 100%;
+    background-color: rgba(243, 163, 113, 0.7);
+}
+.contact__profile--img{
+    /* outline: 1px solid red; */
+    margin: 10px;
+    /* margin: 0 auto; */
+    border-radius: 90%;
+    width: 90%;
+}
+/* ARTICLE */
+.contact__article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+.contact__article--h3{
+}
+.contact__article--h6{
+    font-size: 1.2rem;
+}
+.contact__article--ul{
+    width: 30%;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact__article--ul li{}
+.contact__article--ul li a{
+    color: #f9f2ff;
+}
+.contact__article--ul li a span{
+    font-size: 2.5rem;
+}
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
