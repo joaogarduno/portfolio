@@ -395,10 +395,59 @@ button{
     font-size: 2.5rem;
 }
 /*========================================================
+    CONTENIDO - FOOTER - RIGHTS AND DESIGN
+==========================================================*/
+.footerContent{
+}
+.footerRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerCol{
+    width: 80%;
+}
+/* COL */
+.footer__author{
+    font-size: 1.0rem;
+}
+.footer__copyright{
+    font-size: 1.0rem;
+}
+.footer__socialIcon{}
+/* BOX - COL */
+.footer__author--p{}
+.footer__copyright--p{}
+.footer__socialIcon--ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: center; */
+    align-items: center;
+}
+/*========================================================
     MEDIAQUERIES
 ==========================================================*/
 /* @media screen and (min-width: 320px){} */
-/* @media screen and (min-width: 480px){} */
+@media screen and (min-width: 480px){
+    .contactContent{}
+    .contact__profile{}
+    .contact__profile--img{}
+    /* ARTICLE */
+    .contact__article{
+    }
+    .contact__article--h3{
+    }
+    .contact__article--h6{}
+    .contact__article--ul{}
+    .contact__article--ul li{}
+    .contact__article--ul li a{}
+    .contact__article--ul li a span{}
+}
+
+/* SCREEN - 768PX */
+
 @media screen and (min-width: 768px){
      /* CONTAINER */
      /* .container{
@@ -416,6 +465,10 @@ button{
         /* position: static; */
         /* position: sticky; */
         height: 10vh;
+    }
+    /* CONTACT */
+    .contact__profile--img{
+        width: 60%;
     }
 }
 @media screen and (min-width: 1024px){
