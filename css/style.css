@@ -167,18 +167,16 @@ button{
 }
 .navContent .container{
     display: flex;
-    justify-content: space-between; /* horizontal */
-    align-items: center;/* vertical */
+    justify-content: space-between; /* eje horizontal */
+    align-items: center;/* eje vertical */
 }
 /* LOGO */
 .navContent .nav__logo{
     /* outline: 1px solid red; */
-    font-size: 4.1rem;/* 40px */
+    font-size: 4.0rem;/* 40px */
     font-family: 'Yellowtail', cursive;
     text-transform: capitalize;
     letter-spacing: 1.5px;
-    /* color: #F3A371; */
-    /* width: 30%; */
 }
 .nav__logo a{
     color: #F3A371;
@@ -192,12 +190,6 @@ button{
     cursor: pointer;
     /* background-color: #274569; */
 }
-/* COLORES DEL PROYECTO 
-#F3A371
-#1B6683
-#274569
-#191022
- */
 .navContent .nav__burger .line{
     background-color: #F3A371;
     margin: 5px;
@@ -206,16 +198,14 @@ button{
     transition: all 0.3s ease;
 }
 /* MENU LINKS */
-/* .navContent .nav__menu{} */
-/* .navContent{} */
 .nav__menu--ul{ /* En esta etiqueta va directa con la clase y no dentro de navContent */
     position: absolute;
     top: 6.0rem;
     right: 0;
     height: 85vh;
     width: 75vw;
-    background-color: #274569;
-    /* background-color: #191022; */
+    /* background-color: #274569; */
+    background-color: #191022;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -262,18 +252,18 @@ button{
     margin: 25px 0;
 }
 /* TEXT */
-.col-contanier .banner__h6{
+.col-container .banner__h6{
     font-size: 1.5rem;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
-.col-contanier .banner__h2{
-    padding: 1.0rem;
+.col-container .banner__h2{
     font-size: 3.0rem;
-}
-.col-contanier .banner__p{
     padding: 1.0rem;
 }
-.col-contanier .banner__button{
+.col-container .banner__p{
+    padding: 1.0rem;
+}
+.col-container .banner__button{
     text-transform: capitalize;
     background-color: #F3A371;
     width: 45%;
@@ -302,12 +292,15 @@ button{
 ==========================================================*/
 /* .aboutContent{} */
 .about__article{
-    border-left: 1px solid #F3A371;
+    /* border-left: 1px solid #F3A371; */
 }
 .about__article--h3{
     padding: 10px;
     font-size: 4.0rem;
     /* text-transform: capitalize; */
+}
+.about__article--line{
+    border-left: 1px solid #F3A371;
 }
 .about__article--p{
     padding: 10px;
@@ -333,7 +326,7 @@ button{
 .colArticle{}
 .work__colArticle--article{}
 .work__article--h4{
-    text-transform: capitalize;
+    padding: 10px;
     font-size: 4.0rem;
 }
 .work__article--bloc{
@@ -355,16 +348,19 @@ button{
 .contact__profile{
     /* outline: 1px solid red; */
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+    /* width: 80%; */
     border-radius: 100% 100% 100% 100% / 100% 100% 15% 100%;
     background-color: rgba(243, 163, 113, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .contact__profile--img{
     /* outline: 1px solid red; */
     margin: 10px;
     /* margin: 0 auto; */
     border-radius: 90%;
-    width: 90%;
+    /* width: 90%; */
+    width: 80%;
 }
 /* ARTICLE */
 .contact__article{
@@ -398,6 +394,8 @@ button{
     CONTENIDO - FOOTER - RIGHTS AND DESIGN
 ==========================================================*/
 .footerContent{
+    /* position: relative;
+    bottom: 0; */
 }
 .footerRow{
     display: flex;
@@ -429,61 +427,33 @@ button{
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
+/* ----------------- 320PX ------------------------- */
 /* @media screen and (min-width: 320px){} */
+/* ------------------ 480PX ------------------------ */
 @media screen and (min-width: 480px){
-    .contactContent{}
-    .contact__profile{}
-    .contact__profile--img{}
-    /* ARTICLE */
-    .contact__article{
+    .container{
+        width: 90%;
     }
-    .contact__article--h3{
+    /*--------NAV-------------------*/
+    /* LOGO */
+    .navContent .nav__logo{
+        font-size: 5.0rem;
     }
-    .contact__article--h6{}
-    .contact__article--ul{}
-    .contact__article--ul li{}
-    .contact__article--ul li a{}
-    .contact__article--ul li a span{}
-}
-
-/* SCREEN - 768PX */
-
-@media screen and (min-width: 768px){
-     /* CONTAINER */
-     /* .container{
-         width: 95%;
-     } */
-     /* BURGER */
-    .navContent .nav__burger{
-        display: none;
+    /*-------------BANNER--------------*/
+    .col-container .banner__h6{
+        font-size: 2.0rem;
     }
-    /* MENU - LINKS */
-    .navContent .nav__menu--ul{
-        flex-direction: row;
-        position: unset;
-        /* position: initial; */
-        /* position: static; */
-        /* position: sticky; */
-        height: 10vh;
+    .col-container .banner__h2{
+        font-size: 4.0rem;
     }
-    /* CONTACT */
-    .contact__profile--img{
-        width: 60%;
+    /* IMG */
+    .banner__figure{
+        width: 70%;
     }
 }
-@media screen and (min-width: 1024px){
-     .container{
-         width: 95%;
-     }
-}
-@media screen and (min-width: 1200px){
-     .container{
-         width: 90%;
-     }
-}
-/* COLORES DEL PROYECTO 
-#F3A371
-#1B6683
-#274569
-#191022
- */
+/* ------------------ 769PX ------------------------ */
+@media screen and (min-width: 768px){}
+/* ------------------- 1024PX ----------------------- */
+@media screen and (min-width: 1024px){}
+/* ------------------------------------------ */
+@media screen and (min-width: 1200px){}
