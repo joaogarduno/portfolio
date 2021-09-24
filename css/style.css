@@ -6,15 +6,6 @@ Version: 1.0
 License:
 
 */
-/* 
-
--> COLORES DEL PROYECTO 
-#F3A371
-#1B6683
-#274569
-#191022
-
- */
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -84,7 +75,7 @@ table {
     CONTAINER
 --------------------------------------------------- */
 .container{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
@@ -130,7 +121,7 @@ button{
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* margin: 45px 0; */
     margin: 25px 0;
     /* margin: 48px 0; */
@@ -139,7 +130,7 @@ button{
     ARTICLE - TAG
 --------------------------------------------------- */
 .articleContent{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* margin: 1.0rem 0; */
     /* padding: 5px 0; */
 }
@@ -147,12 +138,12 @@ button{
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
 .row-container{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 100%;
     margin: 2.0rem 0;
 }
 .col-container{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 100%;
     padding: 1.0rem;
     /* margin: 10px 0; */
