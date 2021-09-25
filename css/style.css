@@ -44,7 +44,7 @@ footer, header, hgroup, menu, nav, section{
 /* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
 html{
     background-color: #191022;
-    color: #f9f2ff;
+    color: #F9F2FF;
     /* line-height: 1.6; */ /* Se reemplaza por el del body */
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -75,15 +75,11 @@ table {
     CONTAINER
 --------------------------------------------------- */
 .container{
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     width: 100%;
 }
-/* ------------------------------------------------
-    HTML - BODY
---------------------------------------------------- */
-/* se quita el html y el body y se colocan dentro del RESET.CSS */
 /* ------------------------------------------------
     TITLES
 --------------------------------------------------- */
@@ -91,7 +87,6 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-    /* font-size: 25px; */
     letter-spacing: .5px;
     text-transform: capitalize;
     letter-spacing: 0.3rem;
@@ -121,18 +116,14 @@ button{
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
-    /* outline: 1px solid red; */
-    /* margin: 45px 0; */
-    margin: 25px 0;
-    /* margin: 48px 0; */
+    outline: 1px solid red;
+    margin: 2.5rem 0;
 }
 /* ------------------------------------------------
     ARTICLE - TAG
 --------------------------------------------------- */
 .articleContent{
-    /* outline: 1px solid red; */
-    /* margin: 1.0rem 0; */
-    /* padding: 5px 0; */
+    outline: 1px solid red;
 }
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
@@ -162,9 +153,8 @@ button{
     align-items: center;/* eje vertical */
 }
 /* LOGO */
-.navContent .nav__logo{
-    /* outline: 1px solid red; */
-    font-size: 4.0rem;/* 40px */
+.nav__logo{
+    font-size: 4.0rem;
     font-family: 'Yellowtail', cursive;
     text-transform: capitalize;
     letter-spacing: 1.5px;
@@ -172,16 +162,12 @@ button{
 .nav__logo a{
     color: #F3A371;
 }
-/* .nav__logo a span{} */
-
 /* BURGER LINES */
-.navContent .nav__burger{
+.nav__burger{
     display: block;
-    /* outline: 1px solid red; */
     cursor: pointer;
-    /* background-color: #274569; */
 }
-.navContent .nav__burger .line{
+.nav__burger .line{
     background-color: #F3A371;
     margin: 5px;
     height: 3px;
@@ -189,13 +175,15 @@ button{
     transition: all 0.3s ease;
 }
 /* MENU LINKS */
-.nav__menu--ul{ /* En esta etiqueta va directa con la clase y no dentro de navContent */
+/* En esta etiqueta va directa con la 
+clase y no dentro de navContent */
+.nav__menu--ul{
+    outline: 1px solid red;
     position: absolute;
-    top: 6.0rem;
+    top: 6.1rem;
     right: 0;
     height: 85vh;
     width: 75vw;
-    /* background-color: #274569; */
     background-color: #191022;
     display: flex;
     flex-direction: column;
@@ -242,42 +230,44 @@ button{
 .headerContent{
     margin: 25px 0;
 }
-/* TEXT */
-.col-container .banner__h6{
+/* ARTICLE */
+.banner__article{
+    outline: 1px solid red;
+}
+.banner__article--h6{
     font-size: 1.5rem;
     /* font-weight: normal; */
 }
-.col-container .banner__h2{
+.banner__article--h2{
     font-size: 3.0rem;
     padding: 1.0rem;
 }
-.col-container .banner__p{
-    padding: 1.0rem;
+.banner__article--p{
+    margin-bottom: 3.0rem;
+    /* padding: 1.0rem; */
 }
-.col-container .banner__button{
-    text-transform: capitalize;
+.banner__article--button{
     background-color: #F3A371;
-    width: 45%;
-    height: 40px;
-    outline: none;
     border-radius: 0.5rem;
+    color: #191022;
+    height: 35px;
     margin-bottom: 2.0rem;
-    /* margin: 10px 0; */
+    /* outline: none; */
+    text-transform: capitalize;
+    width: 50%;
 }
 /* IMG */
-.banner__colImg{
+.banner__figure{
     background-color: rgba(243, 163, 113, 0.5);
     border-radius: 900% 300% 300% 900% / 800% 500% 600% 300%;
+    width: 90%;
+    margin: 0  auto;
 }
-.banner__figure{
-    background-color: rgba(243, 163, 113, 0.8);
+.banner__figure--img{
+    background-color: rgba(243, 163, 113, 1.0);
     border-radius: 300% 900% 900% 300% / 300% 600% 500% 800%;
-    width: 80%;
-    margin: 0 auto;
 }
-.banner__figure .banner__figure--img{
-    border-radius: 80%;
-}
+
 /*========================================================
     MAIN - mainContent - SECTION - aboutContent
 ==========================================================*/
@@ -389,19 +379,18 @@ button{
     bottom: 0; */
 }
 .footerRow{
+    outline: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .footerCol{
-    width: 80%;
+    width: 95.3%;
+    /* width: 33.3%; */
 }
 /* COL */
-.footer__author{
-    font-size: 1.0rem;
-}
-.footer__copyright{
+.footer__author, .footer__copyright{
     font-size: 1.0rem;
 }
 .footer__socialIcon{}
@@ -409,12 +398,15 @@ button{
 .footer__author--p{}
 .footer__copyright--p{}
 .footer__socialIcon--ul{
-    width: 80%;
     display: flex;
     justify-content: space-around;
-    /* align-content: center; */
     align-items: center;
+    width: 80%;
 }
+.footer__socialIcon--ul li a span{
+    color: #F9F2FF;
+}
+
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
@@ -431,10 +423,10 @@ button{
         font-size: 5.0rem;
     }
     /*-------------BANNER--------------*/
-    .col-container .banner__h6{
+    .banner__article--h6{
         font-size: 2.0rem;
     }
-    .col-container .banner__h2{
+    .banner__article--h2{
         font-size: 4.0rem;
     }
     /* IMG */
