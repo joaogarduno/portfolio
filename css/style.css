@@ -161,6 +161,7 @@ button{
 }
 .nav__logo--a{
     color: #F3A371;
+    /* font-weight: bolder; */
 }
 /* BURGER */
 .nav__burger{
@@ -176,7 +177,7 @@ button{
 }
 /* MENU */
 .nav__menu{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     background-color: #191022;
     height: 85vh;
     position: absolute;
@@ -187,7 +188,7 @@ button{
     width: 70vw;
 }
 .nav__menu--ul{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -219,6 +220,7 @@ button{
     background-color: #F3A371;
     color: #274569;
     transition: all 0.3s ease-in-out;
+    font-weight: bold;
 }
 /* ACTIVE MENU - ANIMATION */
 .nav-active{
@@ -429,10 +431,10 @@ button{
     }
     /*--------NAV-------------------*/
     /* LOGO */
-    .navContent .nav__logo{
+    .nav__logo{
         font-size: 5.0rem;
     }
-    /*-------------BANNER--------------*/
+    /*--------BANNER------------------*/
     .banner__article--h6{
         font-size: 2.0rem;
     }
@@ -444,25 +446,26 @@ button{
         width: 70%;
     }
 }
-/* ------------------ 769PX ------------------------ */
+/* ------------------ 768PX ------------------------ */
 @media screen and (min-width: 768px){
     /* NAV */
     .nav__burger{
         display: none;
     }
+    .nav__menu{
+        /* outline: 1px solid red; */
+        position: static;
+        /* flex-direction: row; */
+        height: auto;
+        transform: translateX(0%);
+        width: 65vw;
+    }
     .nav__menu--ul{
         flex-direction: row;
-        position: static;
-        height: auto;
-        /* height: 0; */
-        transform: translateX(0%);
-        width: 70vw;
+        justify-content: space-around;
     }
-    /* .nav__menu--li{
-        
-    } */
-    .nav__menu--li a{
-        border-bottom: none;
+    .nav__menu--a{
+        font-weight: unset;
     }
 }
 /* ------------------- 1024PX ----------------------- */
