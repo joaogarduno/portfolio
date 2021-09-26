@@ -242,7 +242,7 @@ button{
 }
 /* ARTICLE */
 .banner__article{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .banner__article--h6{
     font-size: 1.5rem;
@@ -369,7 +369,7 @@ button{
 }
 .contact__article--ul{
     width: 30%;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -389,7 +389,7 @@ button{
     bottom: 0; */
 }
 .footerRow{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
