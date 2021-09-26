@@ -75,7 +75,7 @@ table {
     CONTAINER
 --------------------------------------------------- */
 .container{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0 auto;
     padding: 0 1.5rem;
     width: 100%;
@@ -116,14 +116,14 @@ button{
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 2.5rem 0;
 }
 /* ------------------------------------------------
     ARTICLE - TAG
 --------------------------------------------------- */
 .articleContent{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
@@ -142,75 +142,85 @@ button{
 /*========================================================
     CONTENIDO - NAV
 ==========================================================*/
+/* NAV - TAG */
 .navContent{
-    /* outline: 1px solid red; */
     position: relative;
     background-color: #191022;
 }
 .navContent .container{
     display: flex;
-    justify-content: space-between; /* eje horizontal */
-    align-items: center;/* eje vertical */
+    justify-content: space-between;
+    align-items: center;
 }
 /* LOGO */
 .nav__logo{
     font-size: 4.0rem;
     font-family: 'Yellowtail', cursive;
-    text-transform: capitalize;
     letter-spacing: 1.5px;
+    text-transform: capitalize;
 }
-.nav__logo a{
+.nav__logo--a{
     color: #F3A371;
 }
-/* BURGER LINES */
+/* BURGER */
 .nav__burger{
     display: block;
     cursor: pointer;
 }
 .nav__burger .line{
     background-color: #F3A371;
-    margin: 5px;
-    height: 3px;
-    width: 40px;
+    height: 0.3rem;
+    margin: 0.5rem;
     transition: all 0.3s ease;
+    width: 4.0rem;
 }
-/* MENU LINKS */
-/* En esta etiqueta va directa con la 
-clase y no dentro de navContent */
+/* MENU */
+.nav__menu{
+    outline: 1px solid red;
+    background-color: #191022;
+    height: 85vh;
+    position: absolute;
+    top: 6.0rem;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    width: 70vw;
+}
 .nav__menu--ul{
     outline: 1px solid red;
-    position: absolute;
-    top: 6.1rem;
-    right: 0;
-    height: 85vh;
-    width: 75vw;
-    background-color: #191022;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    height: 100%;
+    /* height: 85vh; */
+    width: 100%;
 }
-.navContent .nav__menu--ul li{
-    /* padding: 20px 10px; */
+.nav__menu--li{
+    /* border-bottom: 1px solid #F3A371; */
     font-size: 2.5rem;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.navContent .nav__menu--ul li a{
-    border-bottom: 1px solid #F3A371;
-    display: block;
+.nav__menu--a{
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
     letter-spacing: 1.5px;
     color: #F3A371;
 }
-.navContent .nav__menu--ul a:hover{
-    background-color: rgba(216, 222, 233, 0.3);
-    transition: all 0.4s ease;
-    /* padding: 5px; */
-    color: #191022;
+.nav__menu--a:hover{
+    background-color: #F3A371;
+    color: #274569;
+    transition: all 0.3s ease-in-out;
 }
-/*  */
+/* ACTIVE MENU - ANIMATION */
 .nav-active{
     transform: translateX(0%);
 }
@@ -366,7 +376,7 @@ clase y no dentro de navContent */
 }
 .contact__article--ul li{}
 .contact__article--ul li a{
-    color: #f9f2ff;
+    color: #F9F2FF;
 }
 .contact__article--ul li a span{
     font-size: 2.5rem;
@@ -435,7 +445,26 @@ clase y no dentro de navContent */
     }
 }
 /* ------------------ 769PX ------------------------ */
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 768px){
+    /* NAV */
+    .nav__burger{
+        display: none;
+    }
+    .nav__menu--ul{
+        flex-direction: row;
+        position: static;
+        height: auto;
+        /* height: 0; */
+        transform: translateX(0%);
+        width: 70vw;
+    }
+    /* .nav__menu--li{
+        
+    } */
+    .nav__menu--li a{
+        border-bottom: none;
+    }
+}
 /* ------------------- 1024PX ----------------------- */
 @media screen and (min-width: 1024px){}
 /* ------------------------------------------ */
