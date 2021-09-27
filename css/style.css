@@ -108,7 +108,7 @@ img{
 }
 button{
     border: none;
-    /* font-size: 12px; */
+    /* font-size: 1.2rem; */
     font-weight: bold;
     letter-spacing: 1.5px;
 }
@@ -243,9 +243,10 @@ button{
     margin: 25px 0;
 }
 /* ARTICLE */
-.banner__article{
-    /* outline: 1px solid red; */
-}
+/* .banner__article{
+    outline: 1px solid red;
+} */
+/* .bannerArticle__title{} */
 .banner__article--h6{
     font-size: 1.5rem;
     /* font-weight: normal; */
@@ -262,11 +263,16 @@ button{
     background-color: #F3A371;
     border-radius: 0.5rem;
     color: #191022;
-    height: 35px;
+    font-size: 1.3rem;
+    height: 3.5rem;
     margin-bottom: 2.0rem;
     /* outline: none; */
     text-transform: capitalize;
+    transition: all 0.1s ease-in;
     width: 50%;
+}
+.banner__article--button:hover{
+    background-color: rgb(216, 191, 216);
 }
 /* IMG */
 .banner__figure{
@@ -448,7 +454,16 @@ button{
 }
 /* ------------------ 768PX ------------------------ */
 @media screen and (min-width: 768px){
-    /* NAV */
+    .row-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .col-container{
+        /* outline: 1px solid red; */
+        /* width: 48.5%; */
+    }
+    /*--------NAV-------------------*/
     .nav__burger{
         display: none;
     }
@@ -467,8 +482,40 @@ button{
     .nav__menu--a{
         font-weight: unset;
     }
+    /*-----------BANNER------------*/
+    /* IMG */
+    .banner__figure{
+        width: 100%;
+    }
 }
 /* ------------------- 1024PX ----------------------- */
-@media screen and (min-width: 1024px){}
+@media screen and (min-width: 1024px){
+    .container{
+        width: 95%;
+    }
+    /*-----------BANNER------------*/
+    .banner__article--h2{
+        font-size: 5.0rem;
+    }
+    .banner__article--p{
+        font-size: 2.0rem;
+    }
+    .banner__article--button{
+        font-size: 1.5rem;
+    }
+    /* IMG */
+    .banner__figure{
+        width: 90%;
+    }    
+}
 /* ------------------------------------------ */
-@media screen and (min-width: 1200px){}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 90%;
+    }
+    /*-----------BANNER------------*/
+    /* IMG */
+    .banner__figure{
+        width: 85%;
+    }
+}
