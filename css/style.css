@@ -242,11 +242,8 @@ button{
 .headerContent{
     margin: 25px 0;
 }
-/* ARTICLE */
-/* .banner__article{
-    outline: 1px solid red;
-} */
-/* .bannerArticle__title{} */
+/*---------- COL 1 -------------*/
+/* .banner__article--title{} */
 .banner__article--h6{
     font-size: 1.5rem;
     /* font-weight: normal; */
@@ -255,26 +252,7 @@ button{
     font-size: 3.0rem;
     padding: 1.0rem;
 }
-.banner__article--p{
-    margin-bottom: 3.0rem;
-    /* padding: 1.0rem; */
-}
-.banner__article--button{
-    background-color: #F3A371;
-    border-radius: 0.5rem;
-    color: #191022;
-    font-size: 1.3rem;
-    height: 3.5rem;
-    margin-bottom: 2.0rem;
-    /* outline: none; */
-    text-transform: capitalize;
-    transition: all 0.1s ease-in;
-    width: 50%;
-}
-.banner__article--button:hover{
-    background-color: rgb(216, 191, 216);
-}
-/* IMG */
+/*------------- COL 2 ----------------*/
 .banner__figure{
     background-color: rgba(243, 163, 113, 0.5);
     border-radius: 900% 300% 300% 900% / 800% 500% 600% 300%;
@@ -285,6 +263,36 @@ button{
     background-color: rgba(243, 163, 113, 1.0);
     border-radius: 300% 900% 900% 300% / 300% 600% 500% 800%;
 }
+/*------------ COL 3 ---------------------*/
+.banner__article--textoInfo{
+    border-left: 1px solid #F3A371;
+    padding-left: 1.0rem
+}
+/* TXT */
+.banner__article--p{
+    margin-bottom: 3.0rem;
+}
+/* IMG */
+.banner__article--links{}
+.banner__article--links a{
+    color: #274569;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+.banner__article--links a img{
+    border-radius: 45%;
+    background-color: #F9F2FF;
+    padding: 0.5rem;
+    height: 3.5rem;
+    width: 4.0rem;
+    transition: all .4s ease;
+}
+.banner__article--links a img:hover{
+    background-color: #F3A371;
+    /* color: #274569; */
+}
+
+
 
 /*========================================================
     MAIN - mainContent - SECTION - aboutContent
