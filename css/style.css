@@ -108,7 +108,7 @@ img{
 }
 button{
     border: none;
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
@@ -249,7 +249,7 @@ button{
     /* font-weight: normal; */
 }
 .banner__article--h2{
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     padding: 1.0rem;
 }
 /*------------- COL 2 ----------------*/
@@ -273,7 +273,7 @@ button{
     margin-bottom: 3.0rem;
 }
 /* IMG */
-.banner__article--links{}
+/* .banner__article--links{} */
 .banner__article--links a{
     color: #274569;
     margin-left: 0.8rem;
@@ -291,37 +291,24 @@ button{
     background-color: #F3A371;
     /* color: #274569; */
 }
-
-
-
 /*========================================================
     MAIN - mainContent - SECTION - aboutContent
 ==========================================================*/
-/* .aboutContent{} */
-.about__article{
-    /* border-left: 1px solid #F3A371; */
-}
+/* .about__article{
+    background-color: #274569;
+    border: 1px solid rgba(243, 163, 113, 1.0);
+    border-radius: 300% 500% 800% 800% / 300% 800% 300% 800%;
+} */
 .about__article--h3{
-    padding: 10px;
     font-size: 4.0rem;
-    /* text-transform: capitalize; */
+    margin-bottom: 2.0rem;
 }
-.about__article--line{
-    border-left: 1px solid #F3A371;
-}
-.about__article--p{
-    padding: 10px;
-}
-.about__article--img{
-    /* margin: 1.0rem 0 0 2.0rem; */
-    margin-top: 2.0rem;
-    margin-left: 1.5rem;
-    border-radius: 30%;
-    padding: 1px;
-    /* color: #f0f0f0; */
-    width: 3.0rem;
-    height: 3.0rem;
+.about__article--button{
+    color: #F9F2FF;
+    height: 4.0rem;
     background-color: #F3A371;
+    /* width: 8.0rem; */
+    /* width: 20%; */
 }
 /*========================================================
     CONTENIDO - WORK - PORTFOLIO
