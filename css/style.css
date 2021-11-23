@@ -340,7 +340,7 @@ button{
     /* outline: 1px solid red; */
     margin-bottom: 1.5rem;
     /* transition: all 0.5s ease-in; */
-    width: 90%;
+    /* width: 90%; */
 }
 /* .colWorks:hover{
     background-color: rgba(25, 16, 34, 0.8);
@@ -353,12 +353,11 @@ button{
     background-color: #F9F2FF;
     border-radius: 100% 100% 100% 500% / 800% 100% 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: .5rem;
     width: 80%;
     margin: 0 auto;
 }
-.work__box1--figure img{
-    /* width: 80%; */
-}
+/* .work__box1--figure img{} */
 /* ARTICLE */
 .work__box1--article{
     /* border-left: 1px solid #F9F2FF; */
@@ -380,46 +379,33 @@ button{
 /*========================================================
     CONTENIDO - CONTACT - INFO CONTACT
 ==========================================================*/
-/* .contactContent{} */
-.contact__profile{
-    /* outline: 1px solid red; */
-    margin: 0 auto;
-    width: 90%;
-    /* width: 80%; */
-    border-radius: 100% 100% 100% 100% / 100% 100% 15% 100%;
-    background-color: rgba(243, 163, 113, 0.7);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.contactContent{
+    padding: 2.0rem 0;
 }
-.contact__profile--img{
-    /* outline: 1px solid red; */
-    margin: 10px;
-    /* margin: 0 auto; */
-    border-radius: 90%;
-    /* width: 90%; */
-    width: 80%;
+/* FIGURE */
+.contact__figure{
+    background-color: rgba(243, 163, 113, 1.0);
+    border-radius: 100% 100% 100% 100% / 100% 100% 15% 100%;
+    margin: 0 auto;
+    width: 60%;
+}
+.contact__figure--img{
+    border-radius: 100%;
 }
 /* ARTICLE */
 .contact__article{
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    /* margin: 0 auto; */
+    justify-content: center;
 }
-/* .contact__article--h3{
-} */
 .contact__article--h6{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
-.contact__article--ul{
-    width: 30%;
-    /* outline: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.contact__article--ul li{
+    display: inline-block;
+    margin-left: 1.5rem;
 }
-.contact__article--ul li{}
 .contact__article--ul li a{
     color: #F9F2FF;
 }
