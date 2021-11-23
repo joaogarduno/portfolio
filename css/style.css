@@ -1,7 +1,7 @@
 /*
 
 Author: Joao Garduño
-URL Author:
+URL Author: joaogarduno.github.io/profile
 Version: 1.0
 License:
 
@@ -122,9 +122,7 @@ button{
 /* ------------------------------------------------
     ARTICLE - TAG
 --------------------------------------------------- */
-.articleContent{
-    /* outline: 1px solid red; */
-}
+/* .articleContent{} */
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
@@ -314,31 +312,75 @@ button{
     CONTENIDO - WORK - PORTFOLIO
 ==========================================================*/
 .workContent{
-    /* outline: 1px solid red; */
+    background-color: #F3A371;
+    padding: 1.0rem 0;
 }
-/* ARTICLE */
-.colArticle{}
-.work__colArticle--article{}
+/* ROW1 */
+/* .rowArticle__work{} */
+/* .colArticle{} */
+/* .work__colArticle--article{} */
 .work__article--h4{
-    padding: 10px;
     font-size: 4.0rem;
+    padding: 1.0rem;
+    margin-bottom: 1.0rem;
 }
 .work__article--bloc{
-    border-left: 1px solid #F3A371;
+    border-left: 1px solid #F9F2FF;
+    padding: 1.5rem;
 }
-.work__articleBloc--p{
-    /* margin: 1.5rem 0; */
-    /* margin: 1.5rem 0; */
+/* .work__articleBloc--p{} */
+/* ROW2 */
+.rowWorks__work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* CONTENT - PORTFOLIO */
-.work__box1{
-    background-color: #F3A371;
-    /* border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%; */
+.colWorks{
+    /* outline: 1px solid red; */
+    margin-bottom: 1.5rem;
+    /* transition: all 0.5s ease-in; */
+    width: 90%;
 }
+/* .colWorks:hover{
+    background-color: rgba(25, 16, 34, 0.8);
+    cursor: pointer;
+} */
+/* .work__box1{} */
+/* FIGURE */
+.work__box1--figure{
+    /* outline: 1px solid red; */
+    background-color: #F9F2FF;
+    border-radius: 100% 100% 100% 500% / 800% 100% 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 80%;
+    margin: 0 auto;
+}
+.work__box1--figure img{
+    /* width: 80%; */
+}
+/* ARTICLE */
+.work__box1--article{
+    /* border-left: 1px solid #F9F2FF; */
+    padding-left: 1.0rem;
+    margin-top: .5rem;
+    /* padding: 1.0rem; */
+    /* margin: 1.0rem 0 0 0; */
+}
+.work__box1--article h2{
+    font-weight: bolder;
+    font-size: 2.0rem;
+    padding: .5rem;
+    /* font-size: 2.5rem; */
+}
+.work__box1--article p{
+    font-size: 1.2rem;
+}
+
 /*========================================================
     CONTENIDO - CONTACT - INFO CONTACT
 ==========================================================*/
-.contactContent{}
+/* .contactContent{} */
 .contact__profile{
     /* outline: 1px solid red; */
     margin: 0 auto;
@@ -365,8 +407,8 @@ button{
     align-items: center;
     /* margin: 0 auto; */
 }
-.contact__article--h3{
-}
+/* .contact__article--h3{
+} */
 .contact__article--h6{
     font-size: 1.2rem;
 }
@@ -406,10 +448,10 @@ button{
 .footer__author, .footer__copyright{
     font-size: 1.0rem;
 }
-.footer__socialIcon{}
+/* .footer__socialIcon{} */
 /* BOX - COL */
-.footer__author--p{}
-.footer__copyright--p{}
+/* .footer__author--p{} */
+/* .footer__copyright--p{} */
 .footer__socialIcon--ul{
     display: flex;
     justify-content: space-around;
@@ -423,8 +465,6 @@ button{
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
-/* ----------------- 320PX ------------------------- */
-/* @media screen and (min-width: 320px){} */
 /* ------------------ 480PX ------------------------ */
 @media screen and (min-width: 480px){
     .container{
