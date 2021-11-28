@@ -398,7 +398,7 @@ button{
     CONTENIDO - CONTACT - INFO CONTACT
 ==========================================================*/
 .contactContent{
-    padding: 2.0rem 0;
+    padding-top: 2rem;
 }
 /* FIGURE */
 .contact__figure{
@@ -438,26 +438,20 @@ button{
     CONTENIDO - FOOTER - RIGHTS AND DESIGN
 ==========================================================*/
 .footerContent{
+    /* position: relative;
+    bottom: 0;
+    left: 0; */
     /* padding: 2.0rem 0; */
+    padding-bottom: 2rem;
 }
-.footerRow{
+.footer__info{
     /* margin: 0 auto; */
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
-.footerCol{
-    /* margin: 0 auto; */
-}
-.footerCol > p{
+.footer__info p{
     font-size: 1.2rem;
+    margin: 0 auto;
 }
-/* col 1 */
-/* .footer__author--p{} */
-/* col 2 */
-/* .footer__copyright--p{} */
 .footer__copyright--p a{
     color: #F3A371;
 }
