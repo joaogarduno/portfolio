@@ -6,6 +6,11 @@ Version: 1.0
 License:
 
 */
+/*
+position
+box model
+tipografia
+*/
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -32,22 +37,17 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section{
-	display: block;
 }
 /* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
 html{
     background-color: #191022;
+    background-color: rgb(25, 16, 34);
     color: #F9F2FF;
+    font-size: 62.5%;
     /* line-height: 1.6; */ /* Se reemplaza por el del body */
     scroll-behavior: smooth;
-    font-size: 62.5%;
     /* font-size: 16px; */
 }
 body {
@@ -55,6 +55,11 @@ body {
     font-size: 1.6rem;
 	line-height: 1.5; /* se cambio a 1.6 estaba a 1 */
     overflow-x: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
 }
 ol, ul {
 	list-style: none;
@@ -89,12 +94,11 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     letter-spacing: .5px;
     text-transform: capitalize;
-    letter-spacing: 0.3rem;
 }
 /* ------------------------------------------------
     TAGS -  HTML5
 --------------------------------------------------- */
-header, nav, main, section, article, aside, footer, figure{
+header, nav, main, section, article, aside, figure, footer{
     width: 100%;
 }
 /* ------------------------------------------------
@@ -110,13 +114,13 @@ button{
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: normal
 }
 /* ------------------------------------------------
     SECTION - MAIN
 --------------------------------------------------- */
 .sectionContent{
-    margin: 2.5rem 0;
+    margin: 4.5rem 0;
 }
 /* ------------------------------------------------
     ARTICLE - TAG
@@ -126,7 +130,7 @@ button{
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
 .row-container{
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     width: 100%;
 }
 .col-container{
@@ -160,14 +164,14 @@ button{
 }
 .nav__logo--a{
     color: #F3A371;
-    /* font-weight: bolder; */
+    font-weight: bolder;
 }
 /* BURGER */
 .nav__burger{
     display: block;
     cursor: pointer;
 }
-.nav__burger .line{
+.line{
     background-color: #F3A371;
     height: 0.3rem;
     margin: 0.5rem;
@@ -177,6 +181,9 @@ button{
 /* MENU */
 .nav__menu{
     /* outline: 1px solid red; */
+    /* background-color: #10020D; */
+    /* background-color: #1D1F2A; */
+    /* display: block; */
     /* background-color: #191022; */
     background-color: #464655;
     /* background-color: rgba(25, 16, 34, 1.0); */
@@ -245,7 +252,7 @@ button{
     HEADER
 ==========================================================*/
 .headerContent{
-    margin: 25px 0;
+    margin-top: 4.5rem;
 }
 /*---------- COL 1 -------------*/
 /* .banner__article--title{} */
@@ -336,8 +343,8 @@ button{
 /* .colArticle{} */
 /* .work__colArticle--article{} */
 .work__article--h4{
-    font-size: 4.0rem;
-    padding: 1.0rem;
+    font-size: 4rem;
+    padding: 1rem;
     margin-bottom: 1.0rem;
 }
 .work__article--bloc{
@@ -355,7 +362,7 @@ button{
 }
 .colWorks{
     /* outline: 1px solid red; */
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     flex-shrink: 0.5;
     /* transition: all 0.5s ease-in; */
     /* width: 90%; */
@@ -385,7 +392,7 @@ button{
     /* margin: 1.0rem 0 0 0; */
 }
 .work__box1--article h2{
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 2.0rem;
     padding: .5rem;
     /* font-size: 2.5rem; */
@@ -393,13 +400,10 @@ button{
 .work__box1--article p{
     font-size: 1.2rem;
 }
-
 /*========================================================
     CONTENIDO - CONTACT - INFO CONTACT
 ==========================================================*/
-.contactContent{
-    padding-top: 2rem;
-}
+/* .contactContent{} */
 /* FIGURE */
 .contact__figure{
     background-color: rgba(243, 163, 113, 1.0);
@@ -412,7 +416,7 @@ button{
 }
 /* ARTICLE */
 .contact__article{
-    padding-top: 1.0rem;
+    /* padding-top: 1.0rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -460,17 +464,26 @@ button{
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
-/* ------------------ 480PX ------------------------ */
+/*----------------------------------------
+    480PX
+------------------------------------------*/
 @media screen and (min-width: 480px){
-    .container{
+    /* .container{
         width: 90%;
-    }
+    } */
     /*--------NAV-------------------*/
     /* LOGO */
     .nav__logo{
         font-size: 5.0rem;
     }
+    /* MENU */
+    .nav__menu--li{
+        font-size: 3rem;
+    }
     /*--------BANNER------------------*/
+    .headerContent{
+        margin: 5.5rem 0;
+    }
     .banner__article--h6{
         font-size: 2.0rem;
     }
@@ -481,8 +494,25 @@ button{
     .banner__figure{
         width: 70%;
     }
+    .banner__article--links a img{
+        width: 15%;
+    }
+    /*--------WORK-------------------*/
+    .work__box1--figure{
+        width: 60%;
+    }
+    /*--------CONTACT-------------------*/
+    .contact__figure{
+        width: 50%;
+    }
 }
-/* ------------------ 768PX ------------------------ */
+/*----------------------------------------
+    576PX
+------------------------------------------*/
+@media screen and (min-width: 576px){}
+/*----------------------------------------
+    768PX
+------------------------------------------*/
 @media screen and (min-width: 768px){
     .row-container{
         display: flex;
@@ -515,7 +545,13 @@ button{
         width: 100%;
     }
 }
-/* ------------------- 1024PX ----------------------- */
+/*----------------------------------------
+    992PX
+------------------------------------------*/
+@media screen and (min-width: 992px){}
+/*----------------------------------------
+    1024PX
+------------------------------------------*/
 @media screen and (min-width: 1024px){
     .container{
         width: 95%;
@@ -535,7 +571,9 @@ button{
         width: 90%;
     }    
 }
-/* ------------------------------------------ */
+/*----------------------------------------
+    1200PX
+------------------------------------------*/
 @media screen and (min-width: 1200px){
     .container{
         width: 90%;
