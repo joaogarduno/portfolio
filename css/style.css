@@ -180,13 +180,8 @@ button{
 }
 /* MENU */
 .nav__menu{
-    /* outline: 1px solid red; */
-    /* background-color: #10020D; */
-    /* background-color: #1D1F2A; */
-    /* display: block; */
-    /* background-color: #191022; */
-    background-color: #464655;
-    /* background-color: rgba(25, 16, 34, 1.0); */
+    background-color: #48485e;
+    /* background-color: #464655; */
     height: 85vh;
     position: absolute;
     top: 6.0rem;
@@ -196,7 +191,6 @@ button{
     width: 70vw;
 }
 .nav__menu--ul{
-    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,11 +223,20 @@ button{
 }
 .nav__menu--a:hover{
     background-color: #F3A371;
+    color: #191022;
     /* color: #274569; */
-    color: #464655;
+    /* color: #464655; */
     transition: all 0.3s ease-in-out;
     font-weight: bold;
 }
+/* .nav__menu--a:focus{
+    background-color: #F3A371;
+    color: #464655;
+} */
+/* .nav__menu--a:active{
+    background-color: #F3A371;
+    color: #464655;
+} */
 /* ACTIVE MENU - ANIMATION */
 .nav-active{
     transform: translateX(0%);
@@ -252,6 +255,7 @@ button{
     HEADER
 ==========================================================*/
 .headerContent{
+    /* outline: 1px solid red; */
     margin-top: 4.5rem;
 }
 /*---------- COL 1 -------------*/
@@ -268,8 +272,8 @@ button{
 .banner__figure{
     background-color: rgba(243, 163, 113, 0.5);
     border-radius: 900% 300% 300% 900% / 800% 500% 600% 300%;
-    width: 90%;
     margin: 0  auto;
+    width: 90%;
 }
 .banner__figure--img{
     background-color: rgba(243, 163, 113, 1.0);
@@ -353,17 +357,18 @@ button{
 }
 /* .work__articleBloc--p{} */
 /* ROW2 */
-.rowWorks__work{
+.row__work{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* margin-block: 1.0rem; */
 }
-.colWorks{
+.col__work{
     /* outline: 1px solid red; */
     margin-bottom: 3rem;
-    flex-shrink: 0.5;
+    flex-shrink: 1;
+    /* flex-shrink: 0.5; */
     /* transition: all 0.5s ease-in; */
     /* width: 90%; */
 }
@@ -449,18 +454,20 @@ button{
     padding-bottom: 2rem;
 }
 .footer__info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     /* margin: 0 auto; */
-    text-align: center;
+    /* text-align: center; */
 }
 .footer__info p{
     font-size: 1.2rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .footer__copyright--p a{
     color: #F3A371;
 }
-
-
 /*========================================================
     MEDIAQUERIES
 ==========================================================*/
@@ -468,9 +475,6 @@ button{
     480PX
 ------------------------------------------*/
 @media screen and (min-width: 480px){
-    /* .container{
-        width: 90%;
-    } */
     /*--------NAV-------------------*/
     /* LOGO */
     .nav__logo{
@@ -509,52 +513,108 @@ button{
 /*----------------------------------------
     576PX
 ------------------------------------------*/
-@media screen and (min-width: 576px){}
+@media screen and (min-width: 576px){
+    /*--------NAV-------------------*/
+    .nav__menu{
+        width: 60vw;
+    }
+    /*--------HEADER BANNER---------*/
+    .banner__figure{
+        width: 70%;
+    }
+    .banner__article--links a img{
+        width: 15%;
+    }
+    /*------------FOOTER-------------*/
+    .footer__info{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
 /*----------------------------------------
     768PX
 ------------------------------------------*/
 @media screen and (min-width: 768px){
-    .row-container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    /* .col-container{} */
     /*--------NAV-------------------*/
+    /* LOGO */
+    /* .nav__logo{} */
     .nav__burger{
         display: none;
     }
     .nav__menu{
-        /* outline: 1px solid red; */
+        background-color: #191022;
         position: static;
-        /* flex-direction: row; */
         height: auto;
         transform: translateX(0%);
-        width: 65vw;
+        width: 80vw;
     }
     .nav__menu--ul{
         flex-direction: row;
         justify-content: space-around;
     }
+    .nav__menu--li{
+        font-size: 2.4rem;
+    }
     .nav__menu--a{
         font-weight: unset;
+        padding: .2rem;
     }
-    /*-----------BANNER------------*/
+    .nav__menu--a:hover{
+        border-radius: 1rem;
+    }
+    /*-----------HEADER - BANNER------------*/
+    .row__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /* IMG */
     .banner__figure{
         width: 100%;
     }
+    /*-----------WORK------------*/
+    .row__work{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .col__work{
+        flex-wrap: wrap;
+        width: 44.9%;
+    }
+    /*-----------CONTACT------------*/
+    .contact__figure{
+        width: 40%;
+    }
+    /*-----------FOOTER------------*/
+    
 }
 /*----------------------------------------
     992PX
 ------------------------------------------*/
-@media screen and (min-width: 992px){}
+@media screen and (min-width: 992px){
+    /*--------NAV-------------------*/
+    .nav__menu{
+        width: 75vw;
+    }
+    /*-----------HEADER - BANNER------------*/
+    .headerContent{
+        margin-top: 8rem;
+    }
+    /*-----------CONTACT------------*/
+    .contact__figure{
+        width: 30%;
+    }
+}
 /*----------------------------------------
     1024PX
 ------------------------------------------*/
 @media screen and (min-width: 1024px){
     .container{
         width: 95%;
+    }
+    /*--------NAV-------------------*/
+    .nav__menu{
+        width: 65vw;
     }
     /*-----------BANNER------------*/
     .banner__article--h2{
@@ -569,7 +629,11 @@ button{
     /* IMG */
     .banner__figure{
         width: 90%;
-    }    
+    }
+    /*-----------WORK------------*/
+    .col__work{
+        width: 32.5%;
+    }
 }
 /*----------------------------------------
     1200PX
@@ -577,6 +641,10 @@ button{
 @media screen and (min-width: 1200px){
     .container{
         width: 90%;
+    }
+    /* MENU */
+    .nav__menu{
+        width: 55vw;
     }
     /*-----------BANNER------------*/
     /* IMG */
