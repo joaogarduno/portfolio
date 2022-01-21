@@ -11,6 +11,10 @@ position
 box model
 tipografia
 */
+/* VARIABLE */
+:root{
+    
+}
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -252,7 +256,7 @@ button{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 /*========================================================
-    HEADER
+    HEADER - BANNER
 ==========================================================*/
 .headerContent{
     /* outline: 1px solid red; */
@@ -280,7 +284,7 @@ button{
     border-radius: 300% 900% 900% 300% / 300% 600% 500% 800%;
 }
 /*------------ COL 3 ---------------------*/
-.banner__article--textoInfo{
+.banner__article--textoInfo, .about__article{
     border-left: 1px solid #F3A371;
     padding: 2.0rem;
     /* padding-left: 1.0rem */
@@ -316,14 +320,15 @@ button{
     border: 1px solid rgba(243, 163, 113, 1.0);
     border-radius: 300% 500% 800% 800% / 300% 800% 300% 800%;
 } */
-.aboutContent{
-    padding: 2rem 0;
-    /* padding-bottom: 1.5rem; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-}
+/* .aboutContent{} */
 .about__article--h3{
     font-size: 4.0rem;
-    margin-bottom: 2.0rem;
+    /* margin-bottom: 2.0rem; */
+}
+.about__article--hobby{}
+.about__hobby--span{
+    font-size: 3rem;
+    margin-left: 2rem;
 }
 .about__article--button{
     background-color: #F3A371;
@@ -331,9 +336,17 @@ button{
     cursor: pointer;
     font-size: 1.5rem;
     height: 4.0rem;
+    margin-top: 1.5rem;
+    transition: all 0.5s ease-out;
     width: 50%;
     /* width: 8.0rem; */
     /* width: 20%; */
+}
+.about__article--button:hover{
+    background-color: #F9F2FF;
+    color: #F3A371;
+    /* background-color: #48485e;
+    color: #191022; */
 }
 /*========================================================
     WORK - PORTFOLIO
@@ -501,6 +514,11 @@ button{
     .banner__article--links a img{
         width: 15%;
     }
+    /*--------ABOUT------------------*/
+    .about__article--button{
+        height: 5rem;
+        width: 40%;
+    }
     /*--------WORK-------------------*/
     .work__box1--figure{
         width: 60%;
@@ -524,6 +542,10 @@ button{
     }
     .banner__article--links a img{
         width: 15%;
+    }
+    /*--------CONTACT-------------------*/
+    .contact__figure{
+        width: 40%;
     }
     /*------------FOOTER-------------*/
     .footer__info{

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?bq7q5z');
-  src:  url('../fonts/icomoon.eot?bq7q5z#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?bq7q5z') format('truetype'),
-    url('../fonts/icomoon.woff?bq7q5z') format('woff'),
-    url('../fonts/icomoon.svg?bq7q5z#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?jvwhki');
+  src:  url('../fonts/icomoon.eot?jvwhki#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?jvwhki') format('truetype'),
+    url('../fonts/icomoon.woff?jvwhki') format('woff'),
+    url('../fonts/icomoon.svg?jvwhki#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-headphones:before {
+  content: "\f025";
+}
+.icon-camera:before {
+  content: "\f030";
+}
+.icon-plane:before {
+  content: "\f072";
+}
 .icon-github:before {
   content: "\f09b";
 }
@@ -33,6 +42,9 @@
 }
 .icon-youtube-play:before {
   content: "\f16a";
+}
+.icon-dribbble:before {
+  content: "\f17d";
 }
 .icon-behance:before {
   content: "\f1b4";
