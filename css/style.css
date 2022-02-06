@@ -13,7 +13,11 @@ tipografia
 */
 /* VARIABLE */
 :root{
-    
+    /* COLOR */
+    --color-background: #191022;
+    --color-letter: #F9F2FF;
+    --color-menuletter: #F3A371;
+    --color-menuback: #48485e;
 }
 *, ::after, ::before{
     box-sizing: border-box;
@@ -47,7 +51,7 @@ time, mark, audio, video {
 /* ESTAS LINEAS SE LAS AGREGE A ESTE RESET DE CSS */
 html{
     background-color: #191022;
-    background-color: rgb(25, 16, 34);
+    /* background-color: rgb(25, 16, 34); */
     color: #F9F2FF;
     font-size: 62.5%;
     /* line-height: 1.6; */ /* Se reemplaza por el del body */
@@ -133,13 +137,14 @@ button{
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
+.row-container, .col-container{
+    width: 100%;
+}
 .row-container{
     margin: 2rem 0;
-    width: 100%;
 }
 .col-container{
     padding: 1.5rem 1.0rem;
-    width: 100%;
 }
 /*========================================================
     CONTENIDO - NAV
@@ -315,20 +320,12 @@ button{
 /*========================================================
     ABOUT
 ==========================================================*/
-/* .about__article{
-    background-color: #274569;
-    border: 1px solid rgba(243, 163, 113, 1.0);
-    border-radius: 300% 500% 800% 800% / 300% 800% 300% 800%;
-} */
-/* .aboutContent{} */
 .about__article--h3{
     font-size: 4.0rem;
-    /* margin-bottom: 2.0rem; */
 }
-/* .about__article--hobby{} */
 .about__hobby--span{
     font-size: 3rem;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 .about__article--button{
     background-color: #F3A371;
@@ -339,14 +336,10 @@ button{
     margin-top: 1.5rem;
     transition: all 0.5s ease-out;
     width: 50%;
-    /* width: 8.0rem; */
-    /* width: 20%; */
 }
 .about__article--button:hover{
     background-color: #F9F2FF;
     color: #F3A371;
-    /* background-color: #48485e;
-    color: #191022; */
 }
 /*========================================================
     WORK - PORTFOLIO
@@ -419,7 +412,7 @@ button{
     font-size: 1.2rem;
 }
 /*========================================================
-    CONTENIDO - CONTACT - INFO CONTACT
+    CONTACT - INFO CONTACT
 ==========================================================*/
 /* .contactContent{} */
 /* FIGURE */
@@ -593,6 +586,11 @@ button{
     /* IMG */
     .banner__figure{
         width: 100%;
+    }
+    /*---------- ABOUT ------------*/
+    .col__about--info{
+        margin: 0 auto;
+        width: 65%;
     }
     /*-----------WORK------------*/
     .row__work{
