@@ -1,6 +1,6 @@
 const navSlide = () => {
-    const burger = document.querySelector('.nav__burger');
-    const nav = document.querySelector('.nav__menu');
+    const burger = document.querySelector('.header__burger');
+    const nav = document.querySelector('.header__nav');
 
     burger.addEventListener('click', () => {
         // TOGGLE NAV

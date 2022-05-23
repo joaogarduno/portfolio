@@ -30,59 +30,34 @@ Release date: 10/nov/2021
     <title>Joao's Portfolio</title>
 </head>
 <body id="home">
-    <!-- NAV -->
-    <nav class="navContent">
+    <!-- HEADER -->
+    <header class="headerContent">
         <div class="container">
-            <div class="nav__logo">
-                <a href="index.html" class="nav__logo--a"><span class="nav__logo--span">joao</span></a>
+            <!-- LOGO -->
+            <div class="header__logo">
+                <a href="index.html" class="header__logo--a"><span class="header__logo--span">j</span>oao</a>
             </div>
-            <div class="nav__burger">
+            <!-- BURGER -->
+            <div class="header__burger">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
             </div>
-            <div class="nav__menu">
-                <ul class="nav__menu--ul">
-                    <li class="nav__menu--li"><a href="#home" class="nav__menu--a">home</a></li>
-                    <li class="nav__menu--li"><a href="#about" class="nav__menu--a">about</a></li>
-                    <li class="nav__menu--li"><a href="#work" class="nav__menu--a">work</a></li>
-                    <li class="nav__menu--li"><a href="#blog" class="nav__menu--a">blog</a></li>
-                    <li class="nav__menu--li"><a href="#contact" class="nav__menu--a">contact</a></li>
+            <!-- MENU -->
+            <nav class="header__nav navContent">
+                <ul class="header__nav--ul">
+                    <!-- <li class="nav__ul--li"><a href="#home" class="nav__ul--a">home</a></li> -->
+                    <li class="nav__ul--li"><a href="#about" class="nav__ul--a">about</a></li>
+                    <li class="nav__ul--li"><a href="#service" class="nav__ul--a">service</a></li>
+                    <li class="nav__ul--li"><a href="#work" class="nav__ul--a">portfolio</a></li>
+                    <!-- <li class="nav__ul--li"><a href="#blog" class="nav__ul--a">blog</a></li> -->
+                    <li class="nav__ul--li"><a href="#contact" class="nav__ul--a">contact</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- HEADER - BANNER -->
-    <header class="headerContent">
-        <div class="bannerContent">
-            <div class="container">
-                <div class="row-container row__header">
-                    <div class="col-container col__header">
-                        <article class="banner__article--title">
-                            <h6 class="banner__article--h6">frontend developer</h6>
-                            <h2 class="banner__article--h2">joao garduño</h2>
-                        </article>
-                    </div>
-                    <div class="col-container col__header">
-                        <figure class="banner__figure">
-                            <img src="img/banner/joaoProfile.png" alt="Image_Portfolio_Joao_Frontend_Developer" class="banner__figure--img">
-                        </figure>
-                    </div>
-                    <div class="col-container col__header ">
-                        <article class="banner__article--textoInfo">
-                            <p class="banner__article--p">I'm a Frontend Developer based in Mexico, and I really enjoy playing with elements and colors. But, something more than that, I love traveling, seeing new places, taking pictures and listening to music.</p>
-                            <div class="banner__article--links">
-                                <a href="https://www.linkedin.com/in/joaogarduno/"><img src="img/banner/linkedin2.svg" alt=""></a>
-                                <a href="https://github.com/joaogarduno"><img src="img/banner/github.svg" alt="Repositories_of_GitHub"></a>
-                                <a href="https://codepen.io/Garivanns"><img src="img/banner/codepen.svg" alt=""></a>
-                            </div>
-                        </article>
-                        <!-- <button class="banner__article--button" type="submit">get in touch</button> -->
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
+    <!-- BANNER
+    <div class="bannerContent"></div> -->
     <!-- MAIN -->
     <main class="mainContent">
         <!-- SECTIONS - ABOUT -->
@@ -101,8 +76,7 @@ Release date: 10/nov/2021
                                 <span class="icon-camera about__hobby--span"></span>
                                 <span class="icon-plane about__hobby--span"></span>
                             </div><br>
-                            <button src="https://drive.google.com/file/d/1JGZb4cruvRbQhaE-9M1iRPjNU14DZ5SK/view?usp=sharing" type="button" class="about__article--button">View CV</button>
-                            <!-- <button type="button" class="about__article--button"></button> -->
+                            <button type="button" class="about__article--button">View CV</button>
                         </article>
                     </div>
                 </div>
@@ -112,7 +86,8 @@ Release date: 10/nov/2021
         <section id="work" class="sectionContent workContent">
             <div class="container">
                 <!-- ROW 1 -->
-                <div class="row-container rowArticle__work">
+                <!-- rowArticle__work -->
+                <div class="row-container row__work--title">
                     <div class="col-container colArticle">
                         <article class="work__colArticle--article">
                             <h4 class="work__article--h4">my projects</h4>
@@ -124,7 +99,7 @@ Release date: 10/nov/2021
                     </div>
                 </div>
                 <!-- ROW 2 -->
-                <div class="row-container row__work">
+                <div class="row-container row__work--portfolio">
                     <!-- Works - Portfolio -->
                     <div class="col-container col__work">
                         <div class="work__box1">
@@ -242,7 +217,7 @@ Release date: 10/nov/2021
             </div>
         </div>
     </footer>
-    <!-- SCRIPT'S -->
-    <script src="js/menu.js" type="text/javascript"></script>
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
