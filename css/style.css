@@ -154,9 +154,23 @@ button{
 ==========================================================*/
 .headerContent{
     background-color: var(--color-background);
+    position: relative;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    /* padding: 2rem 8rem; */
+    transition: all 0.5s ease-in-out;
+}
+.headerContent.scroll-down{
+    /* background-color: var(--color-menuslide); */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* color: var(--color-letter); */
+    /* padding: 0 1rem; */
+    padding: 1rem 1rem;
     position: fixed;
     top: 0;
+    left: 0;
 }
 .headerContent .container{
     display: flex;
@@ -165,15 +179,21 @@ button{
 }
 /* ---------- LOGO ---------- */
 .header__logo{
+    /* outline: 1px solid red; */
     font-family: 'Yellowtail', cursive;
     font-size: 4rem;
+    font-weight: bold;
     letter-spacing: .3rem;
     text-transform: capitalize;
     width: auto;
 }
 .header__logo--a{
     color: var(--color-menuletter);
-    font-weight: bold;
+    /* font-family: 'Yellowtail', cursive; */
+    /* font-weight: bold; */
+    /* font-size: 4rem; */
+    /* letter-spacing: .3rem; */
+    /* text-transform: capitalize; */
 }
 /* ---------- BURGER ---------- */
 .header__burger{
@@ -191,9 +211,16 @@ button{
     width: 4rem;
 }
 /* ---------- MENU ---------- */
+/* .header__nav.scroll-down{
+    top: 8rem;
+    right: 0
+} */
 .header__nav{
     background-color: var(--color-menuslide);
     height: 80vh;
+    /* position: fixed;
+    top: 2rem;
+    right: 0; */
     position: absolute;
     top: 6rem;
     right: 0;
@@ -213,6 +240,7 @@ button{
 .nav__ul--li{
     font-size: 2.5rem; /*  */
     text-transform: capitalize;
+    /* transition: all 0.3s ease-in-out; */
     width: 100%;
 }
 .nav__ul--a{
@@ -227,6 +255,11 @@ button{
     /* transition: 0.6s ease-in; */
     width: 100%;
 }
+/* .header__nav ul li:hover{
+    border: 1px solid var(--color-letter);
+    background-color: var(--color-menuletter);
+} */
+
 .nav__ul--a:hover{
     background-color: var(--color-menuletter);
     color: var(--color-letter);
@@ -250,16 +283,13 @@ button{
     BANNER
 ==========================================================*/
 .bannerContent{
-    /* outline: 1px solid red; */
     margin: 4.5rem 0;
 }
 .banner__layer{
-    /* outline: 1px solid red; */
     padding: 2rem 0;
 }
 /* ARTICLES -> TITLES - BIO */
 .banner__article--title, .banner__article--bio{
-    /* outline: 1px solid red; */
     margin: 1rem 0;
     /* text-align: center; */
 }
@@ -289,7 +319,6 @@ button{
 }
 /* ---------- COL 3 - ARTICLE - BIO ---------- */
 .banner__article--bio{
-    /* outline: 1px solid red; */
     border-left: 1px solid var(--color-menuletter);
     padding: 2rem;
 }
@@ -297,7 +326,6 @@ button{
     margin-bottom: 3rem;
 }
 .banner__articleBio--social{
-    /* outline: 1px solid red; */
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
@@ -457,12 +485,15 @@ button{
 @media screen and (min-width: 480px){
     /* ---------- HEADER - NAV ---------- */
     /* LOGO */
-    .header__logo{
+    /* .header__logo{
         font-size: 5rem;
-    }
+    } */
+    /* .header__logo--a{
+        font-size: 5rem;
+    } */
     /* MENU */
     .header__nav{
-        top: 7.5rem;
+        /* top: 7.5rem; */
         width: 50vw;
     }
     .nav__ul--li{
@@ -495,12 +526,17 @@ button{
 ------------------------------------------*/
 @media screen and (min-width: 576px){
     /* ---------- HEADER - NAV ---------- */
-    .header__nav{
-        width: 60vw;
+    /* LOGO */
+    .header__logo{
+        font-size: 5rem;
     }
+    /* MENU */
+    /* .header__nav{
+        width: 50vw;
+    } */
     /* ---------- BANNER ---------- */
     .banner__figure{
-        width: 60%;
+        width: 50%;
     }
     /* ---------- CONTACT ---------- */
     .contact__figure{
@@ -517,6 +553,9 @@ button{
 ------------------------------------------*/
 @media screen and (min-width: 768px){
     /* ---------- HEADER - NAV ---------- */
+    /* .headerContent.scroll-down{
+        padding: 1.5rem 8rem;
+    } */
     /* BURGER */
     .header__burger{
         display: none;
@@ -527,37 +566,45 @@ button{
         position: static;
         height: auto;
         transform: translateX(0%);
-        width: 85vw;
+        width: 70vw;
+        /* width: 85vw; */
     }
     .header__nav--ul{
         flex-direction: row;
-        justify-content: space-around;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
     }
     .nav__ul--li{
-        font-size: 2.4rem;
+        font-size: 2rem;
+        /* margin: .5rem; */
+        /* font-size: 2.4rem; */
     }
-    .nav__ul--a{
+    /* .nav__ul--a{
         font-weight: unset;
-        padding: .2rem;
-    }
+        padding: .5rem;
+    } */
     .nav__ul--a:hover{
+        border: .1rem solid var(--color-menuletter);
+        background-color: var(--color-background);
+        /* background-color: var(--color-menuslide); */
+        border-radius: 2.5rem;
+    }
+    /* .nav__ul--a:hover{
         border-radius: 1rem;
-    }
+    } */
     /* ---------- BANNER ---------- */
-    .headerContent{
-        /* padding-top: 4.5rem; */
-        /* margin-top: 6.5rem;  */
-    }
-    .row__header{
-        display: flex;
-        /* flex-flow: row wrap; */
+    /* ROW */
+    .row__banner{
+        /* display: flex; */
         flex-direction: row;
         align-items: center;
-        /* justify-content: baseline; */
         justify-content: space-around;
     }
     /* IMG */
     .banner__figure{
+        /* width: 90%; */
         width: 100%;
     }
     /* ---------- ABOUT ---------- */
@@ -591,8 +638,11 @@ button{
 ------------------------------------------*/
 @media screen and (min-width: 992px){
     /* ---------- HEADER - NAV ---------- */
-    .header__nav{
+    /* .header__nav{
         width: 75vw;
+    } */
+    .nav__ul--li{
+        font-size: 2.5rem;
     }
     /* ---------- BANNER ---------- */
     /* .headerContent{
@@ -609,10 +659,12 @@ button{
 @media screen and (min-width: 1024px){
     /* ---------- CONTAINER ---------- */
     .container{
+        /* padding: 0 2rem; */
         width: 95%;
     }
     /* ---------- HEADER - NAV ---------- */
     .header__nav{
+        /* width: 60vw; */
         width: 65vw;
     }
     /* ---------- BANNER ---------- */
@@ -644,11 +696,13 @@ button{
 @media screen and (min-width: 1200px){
     /* ---------- CONTAINER ---------- */
     .container{
+        /* padding: 0 2rem; */
         width: 90%;
     }
     /* ---------- HEADER - NAV ---------- */
     /* MENU */
     .header__nav{
+        /* width: 60vw; */
         width: 55vw;
     }
     /* ---------- BANNER ---------- */
