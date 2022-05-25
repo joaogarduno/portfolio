@@ -132,13 +132,10 @@ button{
 /* ------------------------------------------------
     MAIN - SECTION - ARTICLE
 --------------------------------------------------- */
-/* .mainContent{
-    display: grid;
-} */
-/* .sectionContent{
-    margin: 4.5rem 0;
-} */
+/* .mainContent{} */
+/* sectionContent{} */
 /* .articleContent{} */
+/* .footerContent{} */
 /* ------------------------------------------------
     ROW & COLUMS - CONTAINERS
 --------------------------------------------------- */
@@ -148,27 +145,26 @@ button{
 .row-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /* .col-container{} */
 /*========================================================
-    CONTENIDO - HEADER - LOGO - MENU
+    HEADER - LOGO - BURGER - MENU
 ==========================================================*/
 .headerContent{
-    outline: 1px solid red;
     background-color: var(--color-background);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     position: fixed;
     top: 0;
 }
 .headerContent .container{
-    outline: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 /* ---------- LOGO ---------- */
 .header__logo{
-    outline: 1px solid red;
     font-family: 'Yellowtail', cursive;
     font-size: 4rem;
     letter-spacing: .3rem;
@@ -181,7 +177,6 @@ button{
 }
 /* ---------- BURGER ---------- */
 .header__burger{
-    outline: 1px solid red;
     display: block;
     cursor: pointer;
     width: auto;
@@ -252,56 +247,69 @@ button{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 /*========================================================
-    HEADER - BANNER
+    BANNER
 ==========================================================*/
-/* .headerContent{
-    margin-top: 4.5rem;
-    padding: 2.5rem 0;
-} */
-/* .bannerContent{
-    padding: 1.5rem 0;
-} */
-/* ---------- TITLE - COL 1 ---------- */
-.banner__article--h6{
+.bannerContent{
+    /* outline: 1px solid red; */
+    margin: 4.5rem 0;
+}
+.banner__layer{
+    /* outline: 1px solid red; */
+    padding: 2rem 0;
+}
+/* ARTICLES -> TITLES - BIO */
+.banner__article--title, .banner__article--bio{
+    /* outline: 1px solid red; */
+    margin: 1rem 0;
+    /* text-align: center; */
+}
+/* ---------- COL 1 - ARTICLE - TITLES ---------- */
+/* TITLE */
+.banner__articleTitle--h1{
     font-size: 1.5rem;
+    /* font-size: var(--text-subtitles); */
 }
-.banner__article--h2{
+/* SUBTITLE */
+.banner__articleTitle--h2{
     font-size: 4rem;
-    padding: 1.0rem;
+    padding: 1rem;
+    /* font-size: var(--text-titles); */
 }
-/* ---------- TITLE - COL 2 ---------- */
+/* ---------- COL 2 - FIGURE - IMG ---------- */
 .banner__figure{
-    background-color: rgba(243, 163, 113, 0.5);
+    background-color: rgba(243, 163, 113, 0.6);
     border-radius: 900% 300% 300% 900% / 800% 500% 600% 300%;
-    margin: 0  auto;
-    width: 90%;
+    margin: 0 auto;
+    width: 85%;
 }
 .banner__figure--img{
-    background-color: rgba(243, 163, 113, 1.0);
+    background-color: rgba(243, 163, 113, 0.9);
     border-radius: 300% 900% 900% 300% / 300% 600% 500% 800%;
+    /* object-fit: cover; */
 }
-/* ---------- COL 3 ---------- */
-.banner__article--textInfo, .about__article{
+/* ---------- COL 3 - ARTICLE - BIO ---------- */
+.banner__article--bio{
+    /* outline: 1px solid red; */
     border-left: 1px solid var(--color-menuletter);
-    padding: 2.0rem;
+    padding: 2rem;
 }
-/* ---------- TXT ---------- */
-.banner__article--p{
-    margin-bottom: 3.0rem;
+.banner__articleBio--p{
+    margin-bottom: 3rem;
 }
-/* ---------- LINKS - PORTFOLIO ---------- */
-.banner__article--links{
+.banner__articleBio--social{
+    /* outline: 1px solid red; */
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
 }
-.banner__article--links a img{
+/* .banner__articleBio--social a{} */
+.banner__articleBio--social a img{
     background-color: var(--color-letter);
-    border-radius: 50%;
+    border-radius: 100%;
     padding: .5rem;
+    transition: all 0.4s ease;
 }
-.banner__article--links a img:hover{
+.banner__articleBio--social a img:hover{
     background-color: var(--color-menuletter);
 }
 /*========================================================
@@ -386,7 +394,6 @@ button{
     CONTACT - INFO CONTACT
 ==========================================================*/
 .contactContent{
-    /* outline: 1px solid red; */
     padding: 4.5rem 0;
     /* height: 100vh; */
 }
@@ -448,7 +455,7 @@ button{
     480PX
 ------------------------------------------*/
 @media screen and (min-width: 480px){
-    /* ---------- HEADER ---------- */
+    /* ---------- HEADER - NAV ---------- */
     /* LOGO */
     .header__logo{
         font-size: 5rem;
@@ -461,16 +468,13 @@ button{
     .nav__ul--li{
         font-size: 3rem;
     }
-    /* ---------- HEADER - BANNER ---------- */
-    .banner__article--h6{
-        font-size: 2rem;
+    /* ---------- BANNER ---------- */
+    .banner__layer{
+        padding-top: 3rem;
     }
-    /* .banner__article--h2{
-        font-size: 4.5rem;
-    } */
     /* IMG */
     .banner__figure{
-        width: 65%;
+        width: 60%;
     }
     /* ---------- ABOUT ---------- */
     .about__article--button{
@@ -490,11 +494,11 @@ button{
     576PX
 ------------------------------------------*/
 @media screen and (min-width: 576px){
-    /* ---------- HEADER ---------- */
+    /* ---------- HEADER - NAV ---------- */
     .header__nav{
         width: 60vw;
     }
-    /* ---------- HEADER - BANNER ---------- */
+    /* ---------- BANNER ---------- */
     .banner__figure{
         width: 60%;
     }
@@ -512,7 +516,7 @@ button{
     768PX
 ------------------------------------------*/
 @media screen and (min-width: 768px){
-    /* ---------- HEADER ---------- */
+    /* ---------- HEADER - NAV ---------- */
     /* BURGER */
     .header__burger{
         display: none;
@@ -539,7 +543,7 @@ button{
     .nav__ul--a:hover{
         border-radius: 1rem;
     }
-    /* ---------- HEADER - BANNER ---------- */
+    /* ---------- BANNER ---------- */
     .headerContent{
         /* padding-top: 4.5rem; */
         /* margin-top: 6.5rem;  */
@@ -586,11 +590,11 @@ button{
     992PX
 ------------------------------------------*/
 @media screen and (min-width: 992px){
-    /* ---------- HEADER ---------- */
+    /* ---------- HEADER - NAV ---------- */
     .header__nav{
         width: 75vw;
     }
-    /* ---------- HEADER - BANNER ---------- */
+    /* ---------- BANNER ---------- */
     /* .headerContent{
         margin-top: 8rem;
     } */
@@ -603,14 +607,15 @@ button{
     1024PX
 ------------------------------------------*/
 @media screen and (min-width: 1024px){
+    /* ---------- CONTAINER ---------- */
     .container{
         width: 95%;
     }
-    /* ---------- NAV ---------- */
+    /* ---------- HEADER - NAV ---------- */
     .header__nav{
         width: 65vw;
     }
-    /* ---------- HEADER - BANNER ---------- */
+    /* ---------- BANNER ---------- */
     .banner__article--h2{
         font-size: 5.0rem;
     }
@@ -637,14 +642,16 @@ button{
     1200PX
 ------------------------------------------*/
 @media screen and (min-width: 1200px){
+    /* ---------- CONTAINER ---------- */
     .container{
         width: 90%;
     }
+    /* ---------- HEADER - NAV ---------- */
     /* MENU */
     .header__nav{
         width: 55vw;
     }
-    /* ---------- HEADER - BANNER ---------- */
+    /* ---------- BANNER ---------- */
     /* IMG */
     .banner__figure{
         width: 85%;
@@ -655,7 +662,8 @@ button{
     }
 }
 
-/* NOTES */
+
+/* ---------- NOTES - PROJECT ---------- */
 /*
     COLORS PROJECT - PORTFOLIO
     -#191022
@@ -668,12 +676,15 @@ button{
     -#274569
 
 */
-/*  */
+
+
 /*
+
 CATEGORIES y estilos ordenados segun su proposito:
 -position
 -box model
 -tipografia
 -visuales
 -otros
+
 */
