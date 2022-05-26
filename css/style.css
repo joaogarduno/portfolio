@@ -16,10 +16,19 @@ License:
     /* --color-menuslide: #48434D; */
     /* --color-menuslide: #3E3944; */
     /* FONTS SIZE */
-    --text-titles: 2.5rem;
+    --size-xxs: 1.2rem;
+    --size-xs: 1.5rem;
+    /* --size-sm: 1.4rem; */
+    --size-sm: 1.6rem;
+    --size-md: 2.5rem;
+    --size-lg: 3rem;
+    --size-xl: 4rem;
+    --size-xxl: 5rem;
+    /* -- Estilos anteriores -- */
+    /* --text-titles: 2.5rem;
     --text-subtitles: 1.8rem;
     --text-paragraphs: 1.6rem;
-    --text-buttons: 1.2rem;
+    --text-buttons: 1.2rem; */
     /* SECTIONS */
     /* ARTICLES */
 }
@@ -59,9 +68,9 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-body {
+body{
     font-family: 'Poppins', sans-serif;
-    font-size: var(--text-paragraphs);
+    font-size: var(--size-sm);
     /* font-size: 1.6rem; */
 	line-height: 1.5; /* se cambio a 1.6 estaba a 1 */
     overflow-x: hidden;
@@ -91,7 +100,7 @@ table {
 --------------------------------------------------- */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Raleway', sans-serif;
-    font-size: var(--text-titles);
+    font-size: var(--size-md);
     /* font-size: 2.5rem; */
     font-weight: bold;
     letter-spacing: .5px;
@@ -115,7 +124,7 @@ img{
 }
 button{
     border: none;
-    font-size: var(--text-buttons);
+    font-size: var(--size-xxs);
     /* font-size: 1.2rem; */
     font-weight: bold;
     letter-spacing: normal;
@@ -179,21 +188,16 @@ button{
 }
 /* ---------- LOGO ---------- */
 .header__logo{
-    /* outline: 1px solid red; */
-    font-family: 'Yellowtail', cursive;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: .3rem;
-    text-transform: capitalize;
     width: auto;
 }
 .header__logo--a{
     color: var(--color-menuletter);
-    /* font-family: 'Yellowtail', cursive; */
-    /* font-weight: bold; */
+    font-family: 'Yellowtail', cursive;
+    font-size: var(--size-xl);
     /* font-size: 4rem; */
-    /* letter-spacing: .3rem; */
-    /* text-transform: capitalize; */
+    font-weight: bold;
+    letter-spacing: .3rem;
+    text-transform: capitalize;
 }
 /* ---------- BURGER ---------- */
 .header__burger{
@@ -238,7 +242,8 @@ button{
     width: 100%;
 }
 .nav__ul--li{
-    font-size: 2.5rem; /*  */
+    font-size: var(--size-md);
+    /* font-size: 2.5rem; */
     text-transform: capitalize;
     /* transition: all 0.3s ease-in-out; */
     width: 100%;
@@ -296,14 +301,14 @@ button{
 /* ---------- COL 1 - ARTICLE - TITLES ---------- */
 /* TITLE */
 .banner__articleTitle--h1{
-    font-size: 1.5rem;
-    /* font-size: var(--text-subtitles); */
+    font-size: var(--size-xs);
+    /* font-size: 1.5rem; */
 }
 /* SUBTITLE */
 .banner__articleTitle--h2{
-    font-size: 4rem;
+    font-size: var(--size-xl);
+    /* font-size: 4rem; */
     padding: 1rem;
-    /* font-size: var(--text-titles); */
 }
 /* ---------- COL 2 - FIGURE - IMG ---------- */
 .banner__figure{
@@ -344,17 +349,19 @@ button{
     ABOUT
 ==========================================================*/
 .about__article--h3{
-    font-size: 4.0rem;
+    font-size: var(--size-xl);
 }
 .about__hobby--span{
-    font-size: 3rem;
+    font-size: var(--size-lg);
+    /* font-size: 3rem; */
     margin-left: 2.5rem;
 }
 .about__article--button{
     background-color: var(--color-menuletter);
     color: var(--color-letter);
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: var(--size-xs);
+    /* font-size: 1.5rem; */
     height: 4.0rem;
     margin-top: 1.5rem;
     transition: all 0.5s ease-out;
@@ -376,7 +383,8 @@ button{
     padding: 1.5rem 0;
 }
 .work__article--h4{
-    font-size: 4rem;
+    font-size: var(--size-xl);
+    /* font-size: 4rem; */
     padding: 1rem;
     margin-bottom: 1.0rem;
 }
@@ -412,11 +420,13 @@ button{
 }
 .work__box1--article h2{
     font-weight: bold;
-    font-size: 2.0rem;
+    font-size: var(--size-md);
+    /* font-size: 2.0rem; */
     padding: .5rem;
 }
 .work__box1--article p{
-    font-size: 1.2rem;
+    font-size: var(--size-xxs);
+    /* font-size: 1.2rem; */
 }
 /*========================================================
     CONTACT - INFO CONTACT
@@ -443,7 +453,8 @@ button{
     justify-content: center;
 }
 .contact__article--h6{
-    font-size: 1.5rem;
+    font-size: var(--size-xs);
+    /* font-size: 1.5rem; */
 }
 .contact__article--ul{
     padding-top: 2rem;
@@ -456,7 +467,8 @@ button{
     color: var(--color-letter);
 }
 .contact__article--ul li a span{
-    font-size: 2.5rem;
+    font-size: var(--size-md);
+    /* font-size: 2.5rem; */
 }
 /*========================================================
     CONTENIDO - FOOTER - RIGHTS AND DESIGN
@@ -471,7 +483,8 @@ button{
     justify-content: center;
 }
 .footer__info p{
-    font-size: 1.2rem;
+    font-size: var(--size-xxs);
+    /* font-size: 1.2rem; */
 }
 .footer__copyright--p a{
     color: var(--color-menuletter);
@@ -497,7 +510,8 @@ button{
         width: 50vw;
     }
     .nav__ul--li{
-        font-size: 3rem;
+        font-size: var(--size-lg);
+        /* font-size: 3rem; */
     }
     /* ---------- BANNER ---------- */
     .banner__layer{
@@ -528,7 +542,8 @@ button{
     /* ---------- HEADER - NAV ---------- */
     /* LOGO */
     .header__logo{
-        font-size: 5rem;
+        font-size: var(--size-xxl);
+        /* font-size: 5rem; */
     }
     /* MENU */
     /* .header__nav{
@@ -577,7 +592,8 @@ button{
         /* justify-content: space-around; */
     }
     .nav__ul--li{
-        font-size: 2rem;
+        font-size: var(--size-md);
+        /* font-size: 2rem; */
         /* margin: .5rem; */
         /* font-size: 2.4rem; */
     }
@@ -641,9 +657,9 @@ button{
     /* .header__nav{
         width: 75vw;
     } */
-    .nav__ul--li{
+    /* .nav__ul--li{
         font-size: 2.5rem;
-    }
+    } */
     /* ---------- BANNER ---------- */
     /* .headerContent{
         margin-top: 8rem;
@@ -668,19 +684,23 @@ button{
         width: 65vw;
     }
     /* ---------- BANNER ---------- */
-    .banner__article--h2{
-        font-size: 5.0rem;
+    /* COL 1 */
+    .banner__articleTitle--h2{
+        font-size: var(--size-xxl);
+        /* font-size: 5.0rem; */
     }
-    .banner__article--p{
-        font-size: 2.0rem;
-    }
-    .banner__article--button{
-        font-size: 1.5rem;
-    }
-    /* IMG */
+    /* COL 2 */
     .banner__figure{
-        width: 90%;
+        width: 100%;
     }
+    /* COL 3 */
+    /* .banner__articleBio--p{
+        font-size: 2.0rem;
+    } */
+    /* .banner__article--button{
+        font-size: 1.5rem;
+    } */
+    
     /* ---------- WORK ---------- */
     .col__work{
         width: 32.5%;
