@@ -1,265 +1,527 @@
 <!DOCTYPE html>
 <!--
+=======================================================
+PORTFOLIO WEB · Joao Ivan Garduño Salgado
+Full Stack Developer | Marketing Tech
+-----------------------------------------
 
+-----------------------------------------
 Design by: Joao Ivan Garduño Salgado
+URL Author: https://joaogarduno.github.io/portfolio/
+
+Project Name: Portfolio-Joao
 Date: 18-jun-2021
 Version: 1.0
-
-Project Name: Portfolio Joao
-Description: Joao Garduño Frontend Developer
 Release date: 10/nov/2021
 
+Description: Construyo soluciones digitales donde la tecnología, la estrategia y la marca se encuentran.
+
+Perfil híbrido con enfoque en desarrollo web moderno, consultoría digital y ejecución técnica alineada a objetivos de negocio.
+
+-----------------------------------------
+
+· HTML5 semántico + CSS3 (mobile-first) + JavaScript Vanilla (sin librerías)
+· Accesibilidad (WCAG / ARIA) · SEO on-page · Performance
+· Animaciones: slider hero (crossfade), carrusel de proyectos, scroll reveal,
+  parallax, header sticky, menú móvil, navegación activa, smooth scroll.
+· Design System:
+  Colores  -> #191022 (oscuro) · #F9F2FF (claro) · #F3A371 (acento) · #48485E (slate)
+  Tipos    -> Yellowtail (firma) · Raleway (títulos) · Poppins (texto)
+
+=======================================================
 -->
-<html lang="en">
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <!-- META TAG -->
-    <meta name="description" content="Hi! my name is Joao Garduño i'am Frontend Developer, build something like the Web is the best feeling and is greate to be part of the change on Internet">
-    <meta name="keywords" content="Webwork, Developer, Frontend, Frontend Developer, Web design">
-    <meta name="author" content="Joao Garduño, Frontend Developer">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Yellowtail&display=swap" rel="stylesheet"> 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/logo/logo_joao.png" type="image/x-icon">
-    <!-- ICONS -->
-    <link rel="stylesheet" href="css/icon_style.css">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Joao's Portfolio</title>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Sustituye 'no-js' por 'js' lo antes posible: permite estilos de respaldo cuando JavaScript está desactivado (p. ej. el carrusel usa scroll nativo). -->
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#191022" />
+
+  <title>Joao Garduño · Full Stack Developer & Marketing Tech</title> <!-- Portfolio | Joao Garduño -->
+
+	<!-- META TAG | SEO on-page -->
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Portafolio de Joao Ivan Garduño: Full Stack Developer y Marketing Tech. Desarrollo de sitios web, aplicaciones y estrategias digitales orientadas a resultados.">
+  <meta name="author" content="Joao Garduño Salgado">
+	<meta name="keywords" content="FullStack Developer, Developer, React, Node.js, Front-End, Frontend Developer, Web Design, Marketing Digital, SEO, SEM, UI, UX, User Interface, User Experience, Web Development, Web Designer, Web Developer, Portfolio, Joao Garduño, Branding, Frelance, México">
+
+  <link rel="canonical" href="https://joaogarduno.github.io/portfolio/" />
+
+  <!-- Open Graph / Redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Joao Garduño · Full Stack Developer & Marketing Tech" />
+  <meta property="og:description" content="Donde el código y la estrategia de marca hablan el mismo idioma." />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:url" content="https://joaogarduno.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+	
+	<!-- FAVICON -->
+   <!-- Favicon en línea (logo "J") para evitar peticiones extra -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23191022'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' font-style='italic' fill='%23F3A371' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E" />
+	<!-- <link rel="shortcut icon" href="./images/logo/logo_joao.png" type="image/x-icon"> -->
+	
+  <!-- ICONS -->
+	<!-- <link rel="stylesheet" href="css/icon_style.css"> -->
+   <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
+   <!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />	
 </head>
-<body id="home">
-    <!-- HEADER -->
-    <header class="headerContent">
-        <div class="container">
-            <!-- LOGO -->
-            <div class="header__logo">
-                <a href="#home" class="header__logo--a"><span class="header__logo--span">j</span>oao</a>
-            </div>
-            <!-- BURGER -->
-            <div class="header__burger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-            </div>
-            <!-- MENU -->
-            <nav class="header__nav navContent">
-                <ul class="header__nav--ul">
-                    <li class="nav__ul--li"><a href="#home" class="nav__ul--a">home</a></li>
-                    <li class="nav__ul--li"><a href="#about" class="nav__ul--a">about</a></li>
-                    <!-- <li class="nav__ul--li"><a href="#service" class="nav__ul--a">service</a></li> -->
-                    <li class="nav__ul--li"><a href="#work" class="nav__ul--a">portfolio</a></li>
-                    <!-- <li class="nav__ul--li"><a href="#blog" class="nav__ul--a">blog</a></li> -->
-                    <li class="nav__ul--li"><a href="#contact" class="nav__ul--a">contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- BANNER -->
-    <div class="bannerContent">
-        <div class="banner__layer">
-            <div class="container">
-                <div class="row-container row__banner">
-                    <!-- COL 1 -->
-                    <div class="col-container">
-                        <article class="articleContent banner__article--title">
-                            <hgroup>
-                                <h1 class="banner__articleTitle--h1">frontend developer</h1>
-                                <h2 class="banner__articleTitle--h2">joao garduño</h2>
-                            </hgroup>
-                        </article>
-                    </div>
-                    <!-- COL2 -->
-                    <div class="col-container">
-                        <figure class="banner__figure">
-                            <img src="./img/banner/joaoProfile.png" alt="Image_Joao_Portfolio_Frontend_Developer" class="banner__figure--img">
-                        </figure>
-                    </div>
-                    <!-- COL 3 -->
-                    <div class="col-container">
-                        <article class="articleContent banner__article--bio">
-                            <p class="banner__articleBio--p">
-                                I'm a Frontend Developer based in Mexico, and I really enjoy playing with elements and colors. But, something more than that, I love traveling, seeing new places, taking pictures and listening to music.
-                            </p>
-                            <div class="banner__articleBio--social">
-                                <a href="https://www.linkedin.com/in/joaogarduno/">
-                                    <img src="./img/banner/linkedin2.svg" alt="Linkedin_Profile">
-                                </a>
-                                <a href="https://github.com/joaogarduno">
-                                    <img src="./img/banner/github.svg" alt="GitHub_Profile_Joao">
-                                </a>
-                                <a href="https://codepen.io/Garivanns">
-                                    <img src="./img/banner/codepen.svg" alt="CodePen_Profile_Joao">
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<body>
+  <!-- Enlace de salto para navegación por teclado -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Joao Garduño, inicio">Joao<b>.</b></a>
+
+      <!-- Capa oscura del menú móvil -->
+      <div class="nav-overlay" id="navOverlay" hidden></div>
+
+      <!-- Navegación principal -->
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="#stack">Stack</a></li>
+          <li><a class="nav__link" href="#experiencia">Experiencia</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link btn btn--primary nav__cta" href="#contacto">Contrátame</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón hamburguesa (controla el panel en móvil) -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
     </div>
-    <!-- MAIN -->
-    <main class="mainContent">
-        <!-- SECTIONS - ABOUT -->
-        <section id="about" class="sectionContent about-container">
-            <div class="container">
-                <div class="row-container row__about">
-                    <div class="col-container col__about--title">
-                        <h3 class="about__article--h3">about me</h3>
-                    </div>
-                    <div class="col-container col__about--info">
-                        <article class="about__article">
-                            <p class="about__article--p">Hi! my name is Joao Garduño. I studied Engineering at IT, and I get in love with the Web and Design.</p><br>
-                            <p class="about__article--p">I'm in love with my family and friends. My passion for the computers and technology is more than a hobby that takes me to the position where I am. One of the things that I do is try all the best experiences when you have to decide to take the next step with your business.</p><br>
-                            <div class="about__article--hobby">
-                                <span class="icon-headphones about__hobby--span"></span>
-                                <span class="icon-camera about__hobby--span"></span>
-                                <span class="icon-plane about__hobby--span"></span>
-                            </div><br>
-                            <button type="button" class="about__article--button">View CV</button>
-                        </article>
-                    </div>
-                </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ============================ HERO + SLIDER ============================ -->
+    <section class="hero" aria-label="Presentación">
+      <!-- Fondo decorativo (parallax vía JS). aria-hidden: es puramente visual. -->
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1" data-parallax="0.18"></span>
+        <span class="blob blob--2" data-parallax="0.10"></span>
+        <span class="grid-dots" data-parallax="0.05"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <!-- H1 único y persistente del documento (estable para SEO y lectores de
+             pantalla). El titular visible rota en el slider como texto de marketing. -->
+        <h1 class="sr-only">Joao Garduño — Full Stack Developer y Marketing Tech en Guerrero, México</h1>
+
+        <p class="hero__eyebrow">Full Stack Developer · Marketing Tech · Guerrero, México</p>
+
+        <!-- Región del slider. aria-roledescription lo describe como carrusel. -->
+        <div class="slider" id="heroSlider" aria-roledescription="carrusel" aria-label="Perfiles profesionales">
+          <div class="hero__slides">
+            <!-- Diapositiva 1 (los titulares rotativos son <p>: el h1 es el de arriba) -->
+            <article class="hero__slide is-active" role="group" aria-roledescription="diapositiva" aria-label="1 de 3: Desarrollo Web">
+              <span class="hero__saludo">Hola, construyo</span>
+              <p class="hero__title">Aplicaciones <span>web</span> a la medida</p>
+              <p class="hero__text">Interfaces rápidas, escalables y centradas en el usuario con React, Node.js y Python.</p>
+            </article>
+
+            <!-- Diapositiva 2 -->
+            <article class="hero__slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 3: Marketing Digital">
+              <span class="hero__saludo">Hola, diseño</span>
+              <p class="hero__title">Estrategias que <span>convierten</span></p>
+              <p class="hero__text">Branding, SEO y funnels que transforman visitantes en clientes, apoyados en datos.</p>
+            </article>
+
+            <!-- Diapositiva 3 -->
+            <article class="hero__slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 3: Perfil Híbrido">
+              <span class="hero__saludo">Hola, soy el</span>
+              <p class="hero__title">Puente entre <span>código y negocio</span></p>
+              <p class="hero__text">Un solo perfil que entiende la arquitectura técnica y los objetivos de marca.</p>
+            </article>
+          </div>
+
+          <!-- Región viva: anuncia el cambio de diapositiva a lectores de pantalla -->
+          <p class="sr-only" aria-live="polite" id="sliderLive">Diapositiva 1 de 3</p>
+
+          <!-- CTAs (comunes a todas las diapositivas) -->
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#proyectos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+              Ver proyectos
+            </a>
+            <a class="btn btn--ghost" href="#contacto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+              Contactar
+            </a>
+          </div>
+
+          <!-- Controles: flechas + puntos -->
+          <div class="slider-ctrl">
+            <div class="slider-arrows">
+              <button type="button" class="slider-arrow" id="heroPrev" aria-label="Diapositiva anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="slider-arrow" id="heroNext" aria-label="Siguiente diapositiva">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
             </div>
-        </section>
-        <!-- WORK -->
-        <section id="work" class="sectionContent workContent">
-            <div class="container">
-                <!-- ROW 1 -->
-                <!-- rowArticle__work -->
-                <div class="row-container row__work--title">
-                    <div class="col-container colArticle">
-                        <article class="work__colArticle--article">
-                            <h4 class="work__article--h4">my projects</h4>
-                            <div class="work__article--bloc">
-                                <p class="work__articleBloc--p">Here are a few design projects.</p>
-                                <p class="work__articleBloc--p">A collection of my favorites projects i've designed recently.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <!-- ROW 2 -->
-                <div class="row-container row__work--portfolio">
-                    <!-- Works - Portfolio -->
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_1.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2 class="work__article--h2">scholl college</h2>
-                                <p>School College is a project that helps the student community, allowin a rapprochement with students and parents. Parents will be able to access their children's academic information.</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_2.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2>arthe facto</h2>
-                                <p>Arthe Facto is a company dedicated to software development, creating experiences for people, helping the growth and development of your business.</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_3.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2>institute college</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sit voluptatum, nemo natus iste commodi?</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_5.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2>universe parallax</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sit voluptatum, nemo natus iste commodi?</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_4.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2>store cloth</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sit voluptatum, nemo natus iste commodi?</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-container col__work">
-                        <div class="work__box1">
-                            <figure class="work__box1--figure">
-                                <img src="img/work/img_6.svg" alt="">
-                            </figure>
-                            <article class="work__box1--article">
-                                <h2>learwy</h2>
-                                <p>Learnig with you, is a program for children who want to go further, learning at their own pace, but whithout forgetting what they have learned.</p>
-                                <!-- <button type="button"></button> -->
-                                <!-- <i><a href="#"></a></i> -->
-                                <!-- <i><a href="#"></a></i> -->
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- BLOG -->
-        <!-- <section class="sectionContent blogContent"></section> -->
-        <!-- CONTACT -->
-        <section id="contact" class="sectionContent contactContent">
-            <div class="container">
-                <div class="row-container">
-                    <div class="col-container">
-                        <figure class="contact__figure">
-                            <img src="img/banner/joaoProfile.png" alt="" class="contact__figure--img">
-                        </figure>
-                    </div>
-                    <div class="col-container">
-                        <article class="articleContent contact__article">
-                            <h3 class="contact__article--h3">joao garduño</h3>
-                            <h6 class="contact__article--h6">frontend developer</h6>
-                            <ul class="contact__article--ul">
-                                <li><a href="https://www.linkedin.com/in/joaogarduno/"><span class="icon-linkedin"></span></a></li>
-                                <li><a href="https://github.com/joaogarduno"><span class="icon-github"></span></a></li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="footerContent">
-        <div class="container">
-            <div class="footer__info">
-                <p class="footer__author--p">Designed by <strong>Joao Garduño.</strong></p>
-                <p class="footer__copyright--p">All Rights Reserved &copy <a href="https://github.com/joaogarduno">Joao Garduño.</a></p>
-            </div>
+            <!-- Los puntos se generan por JS (botones simples con aria-label) -->
+            <div class="slider-dots" id="heroDots" aria-label="Seleccionar diapositiva"></div>
+          </div>
         </div>
-    </footer>
-    <!-- SCRIPT -->
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script src="js/header.js"></script>
+
+        <!-- ELEMENTO FIRMA: barra de balance Tech / Marketing -->
+        <div class="balance" id="balanceBar" aria-hidden="true">
+          <div class="balance__row">
+            <span>Tech</span><span class="balance__mid">Perfil Híbrido</span><span>Marketing</span>
+          </div>
+          <div class="balance__track">
+            <span class="balance__fill-tech"></span>
+            <span class="balance__fill-mkt"></span>
+          </div>
+          <div class="balance__labels">
+            <span>React · Node · Python · SQL</span><span>SEO · Branding · KPIs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span class="scroll-cue__mouse"></span>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============================ SOBRE MÍ ============================ -->
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sobre mí</span>
+          <h2 class="section-title" id="about-title">Tech + Marketing en un solo <span class="script">perfil</span></h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>Soy <strong>Ingeniero en TI y Full Stack Developer</strong> con experiencia real en entornos de agencia. Mi ventaja competitiva: puedo hablar con el equipo técnico por la mañana y con el cliente de marketing por la tarde, sin perder el hilo en ninguno de los dos.</p>
+            <p>Desarrollo <strong>soluciones digitales escalables</strong> —sitios web, aplicaciones y landing pages— alineadas a los objetivos de negocio, marca y conversión de cada proyecto.</p>
+            <div class="about__tags" aria-label="Datos rápidos">
+              <span class="chip">Iguala, Guerrero</span>
+              <span class="chip">Inglés fluido</span>
+              <span class="chip">Freelance / Empleado</span>
+              <span class="chip">Disponible para proyectos</span>
+            </div>
+          </div>
+
+          <div class="about__stats-wrap reveal" data-delay="1">
+            <div class="stats">
+              <div class="stat"><div class="stat__num">10<i>+</i></div><div class="stat__label">años de experiencia</div></div>
+              <div class="stat"><div class="stat__num">3<i>+</i></div><div class="stat__label">stacks dominados</div></div>
+              <div class="stat"><div class="stat__num">200<i>+</i></div><div class="stat__label">alumnos formados</div></div>
+              <div class="stat"><div class="stat__num">100<i>%</i></div><div class="stat__label">enfoque en resultados</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ STACK TECNOLÓGICO ============================ -->
+    <section class="section section--dark" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Stack tecnológico</span>
+          <h2 class="section-title" id="stack-title">Dos mundos, un desarrollador</h2>
+          <p class="section-desc">Herramientas que uso para construir producto y para hacerlo crecer.</p>
+        </div>
+
+        <div class="stack__grid">
+          <!-- Columna Tech -->
+          <div class="reveal">
+            <div class="stack__col-head">
+              <span class="stack__icon stack__icon--tech">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              </span>
+              <h3 class="stack__col-title">Frontend &amp; Backend</h3>
+            </div>
+            <div class="stack__tags">
+              <span class="tag tag--tech">React JS</span><span class="tag tag--tech">Vite</span>
+              <span class="tag tag--tech">Tailwind CSS</span><span class="tag tag--tech">HTML5 / CSS3</span>
+              <span class="tag tag--tech">JavaScript ES6+</span><span class="tag tag--tech">Node.js</span>
+              <span class="tag tag--tech">Python</span><span class="tag tag--tech">PostgreSQL</span>
+              <span class="tag tag--tech">MongoDB</span><span class="tag tag--tech">Git / GitHub</span>
+            </div>
+          </div>
+
+          <!-- Columna Marketing -->
+          <div class="reveal" data-delay="1">
+            <div class="stack__col-head">
+              <span class="stack__icon stack__icon--mkt">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg>
+              </span>
+              <h3 class="stack__col-title">Marketing &amp; Negocio</h3>
+            </div>
+            <div class="stack__tags">
+              <span class="tag tag--mkt">Estrategia digital</span><span class="tag tag--mkt">SEO</span>
+              <span class="tag tag--mkt">Paid Media</span><span class="tag tag--mkt">Email Marketing</span>
+              <span class="tag tag--mkt">Branding</span><span class="tag tag--mkt">Funnels</span>
+              <span class="tag tag--mkt">KPIs</span><span class="tag tag--mkt">CRM</span>
+              <span class="tag tag--mkt">Automatización</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCIA ============================ -->
+    <section class="section" id="experiencia" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Experiencia</span>
+          <h2 class="section-title" id="exp-title">Trayectoria</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item tl-item--now reveal">
+            <p class="tl-period">2025 – Actual</p>
+            <h3 class="tl-role">Full Stack Developer / Marketing Tech</h3>
+            <p class="tl-org">Agencia de Marketing Digital &amp; Proyectos Freelance · México</p>
+            <p class="tl-desc">Desarrollo de 3+ sitios y landing pages con React, Vite y Tailwind, optimizados para SEO y conversión. Backends con Node.js y Python sobre PostgreSQL, y gestión directa de cuentas y estrategias digitales de principio a fin.</p>
+          </li>
+          <li class="tl-item reveal" data-delay="1">
+            <p class="tl-period">2019 – 2023</p>
+            <h3 class="tl-role">Maestro de Computación</h3>
+            <p class="tl-org">Instituto Tierra Nueva / Colegio Emaús</p>
+            <p class="tl-desc">Formé a más de 200 alumnos en HTML, CSS, JavaScript y pensamiento lógico aplicado al desarrollo.</p>
+          </li>
+          <li class="tl-item reveal" data-delay="2">
+            <p class="tl-period">2011 – 2019</p>
+            <h3 class="tl-role">Installer Engineer / Dispatcher</h3>
+            <p class="tl-org">Guardvant Inc. / Goldcorp México</p>
+            <p class="tl-desc">Instalación, diagnóstico y soporte de sistemas tecnológicos de monitoreo en entorno industrial, con generación de reportes y métricas operativas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================ PROYECTOS (carrusel) ============================ -->
+    <section class="section section--light-alt" id="proyectos" aria-labelledby="proj-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Proyectos</span>
+          <h2 class="section-title" id="proj-title">Trabajo reciente</h2>
+          <p class="section-desc" style="color:var(--c-slate)">Una selección de proyectos que combinan desarrollo y estrategia.</p>
+        </div>
+
+        <div class="carousel reveal" id="projCarousel" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+          <div class="carousel__viewport">
+            <ul class="carousel__track" id="projTrack">
+              <li class="project" role="group" aria-roledescription="diapositiva" aria-label="Proyecto 1 de 5">
+                <div class="project__media project__media--1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                <div class="project__body">
+                  <h3 class="project__name">E-commerce Restaurante</h3>
+                  <p class="project__desc">Plataforma de pedidos en línea con pasarela de pago y panel de gestión de productos.</p>
+                  <div class="project__tags"><span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span></div>
+                  <a class="project__link" href="#">Ver proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                </div>
+              </li>
+              <li class="project" role="group" aria-roledescription="diapositiva" aria-label="Proyecto 2 de 5">
+                <div class="project__media project__media--2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg></div>
+                <div class="project__body">
+                  <h3 class="project__name">Dashboard de KPIs</h3>
+                  <p class="project__desc">Panel de métricas y conversiones en tiempo real para una agencia de marketing.</p>
+                  <div class="project__tags"><span class="ptag">Python</span><span class="ptag">PostgreSQL</span><span class="ptag">Analytics</span></div>
+                  <a class="project__link" href="#">Ver proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                </div>
+              </li>
+              <li class="project" role="group" aria-roledescription="diapositiva" aria-label="Proyecto 3 de 5">
+                <div class="project__media project__media--3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div>
+                <div class="project__body">
+                  <h3 class="project__name">Landing de Agencia</h3>
+                  <p class="project__desc">Landing page de alta conversión con SEO on-page y captación de leads.</p>
+                  <div class="project__tags"><span class="ptag">Vite</span><span class="ptag">Tailwind</span><span class="ptag">SEO</span></div>
+                  <a class="project__link" href="#">Ver proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                </div>
+              </li>
+              <li class="project" role="group" aria-roledescription="diapositiva" aria-label="Proyecto 4 de 5">
+                <div class="project__media project__media--1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                <div class="project__body">
+                  <h3 class="project__name">App de Gestión</h3>
+                  <p class="project__desc">Aplicación web para administración de inventario y reportes automatizados.</p>
+                  <div class="project__tags"><span class="ptag">React</span><span class="ptag">MongoDB</span><span class="ptag">Node.js</span></div>
+                  <a class="project__link" href="#">Ver proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                </div>
+              </li>
+              <li class="project" role="group" aria-roledescription="diapositiva" aria-label="Proyecto 5 de 5">
+                <div class="project__media project__media--2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h16v12H4z"/><path d="M2 20h20M9 8l2 2 4-4"/></svg></div>
+                <div class="project__body">
+                  <h3 class="project__name">Sitio Corporativo</h3>
+                  <p class="project__desc">Sitio institucional con identidad de marca, blog y optimización de rendimiento.</p>
+                  <div class="project__tags"><span class="ptag">React</span><span class="ptag">Branding</span><span class="ptag">SEO</span></div>
+                  <a class="project__link" href="#">Ver proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Controles del carrusel -->
+          <div class="slider-ctrl" style="justify-content:space-between; margin-top:2rem">
+            <div class="slider-dots" id="projDots" aria-label="Grupos de proyectos"></div>
+            <div class="slider-arrows">
+              <button type="button" class="slider-arrow" id="projPrev" aria-label="Proyectos anteriores" style="border-color:var(--c-light-3); color:var(--c-dark)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="slider-arrow" id="projNext" aria-label="Siguientes proyectos" style="border-color:var(--c-light-3); color:var(--c-dark)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICIOS ============================ -->
+    <section class="section" id="servicios" aria-labelledby="serv-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title" id="serv-title">¿En qué te <span class="script">ayudo?</span></h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
+            <h3 class="service__title">Sitios web &amp; Landings</h3>
+            <p class="service__desc">Diseño y desarrollo orientados a conversión y experiencia de usuario.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3 class="service__title">Aplicaciones web</h3>
+            <p class="service__desc">Soluciones funcionales con React, Node y bases de datos robustas.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg></div>
+            <h3 class="service__title">Consultoría digital</h3>
+            <p class="service__desc">Estrategia, arquitectura y decisiones basadas en datos y negocio.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 2 2.9 6.3L22 9.3l-5 4.9 1.2 7L12 17.8 5.8 21l1.2-7-5-4.9 7.1-1z"/></svg></div>
+            <h3 class="service__title">Branding &amp; presencia</h3>
+            <p class="service__desc">Identidad de marca coherente con tu estrategia digital.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H1a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 2.6 7a1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.6 1.6 0 0 0 7 2.6h.1A1.6 1.6 0 0 0 8.1 1a2 2 0 1 1 4 0v.1A1.6 1.6 0 0 0 14.9 2.6a1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7h.3a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg></div>
+            <h3 class="service__title">Automatización</h3>
+            <p class="service__desc">Flujos digitales, integraciones y scripts que ahorran tiempo real.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3 class="service__title">Soporte estratégico</h3>
+            <p class="service__desc">Acompañamiento continuo para equipos técnicos y clientes digitales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACTO ============================ -->
+    <section class="section section--dark" id="contacto" aria-labelledby="cont-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 class="section-title" id="cont-title">Hablemos</h2>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Datos de contacto -->
+          <div class="reveal">
+            <p class="contact__lead">¿Tienes un proyecto en mente? Cuéntame de qué se trata. Suelo responder en menos de 24 horas.</p>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+                <a href="mailto:joao.garduno@gmail.com">joao.garduno@gmail.com</a>
+              </li>
+              <li class="contact__item">
+                <span class="contact__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.5 5 .3.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>
+                <a href="https://github.com/joaogarduno" target="_blank" rel="noopener noreferrer">github.com/joaogarduno</a>
+              </li>
+              <li class="contact__item">
+                <span class="contact__ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></span>
+                <a href="https://www.linkedin.com/in/joaogarduno/" target="_blank" rel="noopener noreferrer">linkedin.com/in/joaogarduno</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulario · novalidate: la validación la controla el JS de forma accesible -->
+          <form class="form reveal" id="contactForm" data-delay="1" novalidate>
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre completo" autocomplete="name" required aria-describedby="err-name" />
+              <span class="field__error" id="err-name">Por favor, escribe tu nombre.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" required aria-describedby="err-email" />
+              <span class="field__error" id="err-email">Introduce un correo electrónico válido.</span>
+            </div>
+            <div class="field">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" placeholder="¿En qué te puedo ayudar?" required aria-describedby="err-subject" />
+              <span class="field__error" id="err-subject">Cuéntame brevemente el asunto.</span>
+            </div>
+            <div class="field">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." required aria-describedby="err-message"></textarea>
+              <span class="field__error" id="err-message">Escribe un mensaje de al menos 10 caracteres.</span>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center">
+              Enviar mensaje
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <!-- Mensaje de estado (accesible vía aria-live) -->
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__brand">Joao<b>.</b></p>
+        <p class="footer__copy">© <span id="year"></span> Joao Ivan Garduño · Iguala, Guerrero, México</p>
+      </div>
+      <nav class="footer__social" aria-label="Redes sociales">
+        <a href="https://github.com/joaogarduno" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.5 5 .3.3.7 1 .7 2v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/joaogarduno/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        </a>
+        <a href="https://joaogarduno.github.io/portfolio/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button type="button" class="to-top" id="toTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 </html>
