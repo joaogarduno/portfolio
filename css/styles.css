@@ -1,126 +1,136 @@
-/* ========================================================================
-       1. DESIGN TOKENS  ·  Variables globales del sistema de diseño
-       ======================================================================== */
-    :root {
-      /* -- Paleta base (según el design system entregado) -- */
-      --c-dark:          #191022;   /* Fondo oscuro / texto principal        */
-      --c-light:         #F9F2FF;   /* Fondo claro / texto sobre oscuro       */
-      --c-accent:        #F3A371;   /* Acento cálido (CTA, detalles, firma)   */
-      --c-slate:         #48485E;   /* Secundario / texto tenue / bordes      */
+/*
 
-      /* -- Variantes derivadas para profundidad y estados -- */
-      --c-dark-2:        #241733;   /* Superficie elevada sobre fondo oscuro  */
-      --c-dark-3:        #2E2040;   /* Bordes / divisores sobre oscuro        */
-      --c-light-2:       #EFE7F7;   /* Superficie sobre fondo claro           */
-      --c-light-3:       #E2D8EE;   /* Bordes sobre fondo claro               */
-      --c-accent-strong: #E88B4F;   /* Acento en hover / bordes de acento     */
-      --c-accent-soft:   rgba(243,163,113,.12); /* Relleno tenue de acento    */
-      --c-slate-soft:    #8E8EAC;   /* Texto tenue sobre oscuro (~5.8:1, AA)  */
+Author: Joao Garduño
+URL Author: https://joaogarduno.github.io/portfolio/
+Github Profile: https://github.com/joaogarduno
+Version: 1.0
+License: MIT License 
 
-      /* -- Tipografías -- */
-      --font-display: "Yellowtail", cursive;          /* Firma decorativa      */
-      --font-head:    "Raleway", system-ui, sans-serif; /* Títulos             */
-      --font-body:    "Poppins", system-ui, sans-serif; /* Cuerpo de texto     */
+*/
 
-      /* -- Escala tipográfica fluida (clamp: móvil -> desktop) -- */
-      --fs-hero:  clamp(2.5rem, 6vw + 1rem, 4.75rem);
-      --fs-h2:    clamp(1.9rem, 3.5vw + 1rem, 3rem);
-      --fs-h3:    clamp(1.15rem, 1vw + .9rem, 1.4rem);
-      --fs-lead:  clamp(1.05rem, .6vw + .9rem, 1.25rem);
-      --fs-body:  1rem;
-      --fs-small: .875rem;
-      --fs-eyebrow: .8rem;
+/* ========================================================= 
+  1. DESIGN TOKENS  ·  Variables globales del sistema de diseño
+=========================================================== */
+:root {
+  /* -- Paleta base (según el design system entregado) -- */
+  --c-dark:          #191022;   /* Fondo oscuro / texto principal        */
+  --c-light:         #F9F2FF;   /* Fondo claro / texto sobre oscuro       */
+  --c-accent:        #F3A371;   /* Acento cálido (CTA, detalles, firma)   */
+  --c-slate:         #48485E;   /* Secundario / texto tenue / bordes      */
 
-      /* -- Espaciado, radios y capas -- */
-      --space-section: clamp(4rem, 9vw, 7.5rem);
-      --container:     1160px;
-      --radius:        14px;
-      --radius-sm:     8px;
-      --radius-pill:   999px;
+  /* -- Variantes derivadas para profundidad y estados -- */
+  --c-dark-2:        #241733;   /* Superficie elevada sobre fondo oscuro  */
+  --c-dark-3:        #2E2040;   /* Bordes / divisores sobre oscuro        */
+  --c-light-2:       #EFE7F7;   /* Superficie sobre fondo claro           */
+  --c-light-3:       #E2D8EE;   /* Bordes sobre fondo claro               */
+  --c-accent-strong: #E88B4F;   /* Acento en hover / bordes de acento     */
+  --c-accent-soft:   rgba(243,163,113,.12); /* Relleno tenue de acento    */
+  --c-slate-soft:    #8E8EAC;   /* Texto tenue sobre oscuro (~5.8:1, AA)  */
 
-      /* -- Sombras -- */
-      --shadow-sm: 0 4px 14px rgba(25, 16, 34, .08);
-      --shadow-md: 0 14px 40px rgba(25, 16, 34, .14);
+  /* -- Tipografías -- */
+  --font-display: "Yellowtail", cursive;          /* Firma decorativa      */
+  --font-head:    "Raleway", system-ui, sans-serif; /* Títulos             */
+  --font-body:    "Poppins", system-ui, sans-serif; /* Cuerpo de texto     */
 
-      /* -- Transiciones -- */
-      --ease: cubic-bezier(.22, 1, .36, 1);
-      --dur:  .5s;
+  /* -- Escala tipográfica fluida (clamp: móvil -> desktop) -- */
+  --fs-hero:  clamp(2.5rem, 6vw + 1rem, 4.75rem);
+  --fs-h2:    clamp(1.9rem, 3.5vw + 1rem, 3rem);
+  --fs-h3:    clamp(1.15rem, 1vw + .9rem, 1.4rem);
+  --fs-lead:  clamp(1.05rem, .6vw + .9rem, 1.25rem);
+  --fs-body:  1rem;
+  --fs-small: .875rem;
+  --fs-eyebrow: .8rem;
 
-      --header-h: 72px;
-    }
+  /* -- Espaciado, radios y capas -- */
+  --space-section: clamp(4rem, 9vw, 7.5rem);
+  --container:     1160px;
+  --radius:        14px;
+  --radius-sm:     8px;
+  --radius-pill:   999px;
 
-    /* ========================================================================
-       2. RESET Y BASE
-       ======================================================================== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  /* -- Sombras -- */
+  --shadow-sm: 0 4px 14px rgba(25, 16, 34, .08);
+  --shadow-md: 0 14px 40px rgba(25, 16, 34, .14);
 
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    /* Compensa el header fijo al saltar a anclas internas */
-    :target { scroll-margin-top: calc(var(--header-h) + 16px); }
+  /* -- Transiciones -- */
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --dur:  .5s;
 
-    body {
-      font-family: var(--font-body);
-      font-size: var(--fs-body);
-      line-height: 1.65;
-      color: var(--c-dark);
-      background: var(--c-light);
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      overflow-x: hidden;
-    }
+  --header-h: 72px;
+}
 
-    img, svg { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    ul, ol { list-style: none; }
-    button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
-    /* El outline respeta el radio propio del elemento; no se fuerza border-radius. */
-    :focus-visible { outline: 3px solid var(--c-accent); outline-offset: 3px; }
-    /* Los contenedores que reciben foco por navegación (tabindex=-1) no muestran
-       recuadro: solo sirven para reposicionar el punto de tabulación del teclado. */
-    [tabindex="-1"]:focus { outline: none; }
+/* ========================================================== 
+  2. RESET Y BASE 
+========================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* Utilidad: contenido solo para lectores de pantalla */
-    .sr-only {
-      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-    }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+/* Compensa el header fijo al saltar a anclas internas */
+:target { scroll-margin-top: calc(var(--header-h) + 16px); }
 
-    /* Enlace "saltar al contenido" (accesibilidad de teclado) */
-    .skip-link {
-      position: absolute; left: 1rem; top: -100px; z-index: 200;
-      background: var(--c-accent); color: var(--c-dark); font-weight: 600;
-      padding: .7rem 1.1rem; border-radius: var(--radius-sm);
-      transition: top .25s var(--ease);
-    }
-    .skip-link:focus { top: 1rem; }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--c-dark);
+  background: var(--c-light);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
 
-    /* ========================================================================
-       3. LAYOUT · Contenedor y secciones
-       ======================================================================== */
-    .container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+/* El outline respeta el radio propio del elemento; no se fuerza border-radius. */
+:focus-visible { outline: 3px solid var(--c-accent); outline-offset: 3px; }
+/* Los contenedores que reciben foco por navegación (tabindex=-1) no muestran
+    recuadro: solo sirven para reposicionar el punto de tabulación del teclado. */
+[tabindex="-1"]:focus { outline: none; }
 
-    .section { padding-block: var(--space-section); }
-    .section--dark { background: var(--c-dark); color: var(--c-light); }
-    .section--light-alt { background: var(--c-light-2); }
+/* Utilidad: contenido solo para lectores de pantalla */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
 
-    /* Encabezado de sección reutilizable */
-    .section-head { max-width: 640px; margin-bottom: clamp(2rem, 4vw, 3.25rem); }
-    .eyebrow {
-      display: inline-block; font-family: var(--font-head); font-weight: 700;
-      font-size: var(--fs-eyebrow); letter-spacing: .18em; text-transform: uppercase;
-      color: var(--c-accent-strong); margin-bottom: .75rem;
-    }
-    .section--dark .eyebrow { color: var(--c-accent); }
-    .section-title {
-      font-family: var(--font-head); font-weight: 800; font-size: var(--fs-h2);
-      line-height: 1.1; letter-spacing: -.02em;
-    }
-    .section-title .script {
-      font-family: var(--font-display); font-weight: 400; color: var(--c-accent);
-      letter-spacing: 0; font-size: 1.15em;
-    }
-    .section-desc { color: var(--c-slate); font-size: var(--fs-lead); margin-top: 1rem; }
-    .section--dark .section-desc { color: var(--c-slate-soft); }
+/* Enlace "saltar al contenido" (accesibilidad de teclado) */
+.skip-link {
+  position: absolute; left: 1rem; top: -100px; z-index: 200;
+  background: var(--c-accent); color: var(--c-dark); font-weight: 600;
+  padding: .7rem 1.1rem; border-radius: var(--radius-sm);
+  transition: top .25s var(--ease);
+}
+.skip-link:focus { top: 1rem; }
+
+/* ==========================================================
+  3. LAYOUT · Contenedor y secciones
+========================================================== */
+.container { width: min(100% - 2.5rem, var(--container)); margin-inline: auto; }
+
+.section { padding-block: var(--space-section); }
+.section--dark { background: var(--c-dark); color: var(--c-light); }
+.section--light-alt { background: var(--c-light-2); }
+
+/* Encabezado de sección reutilizable */
+.section-head { max-width: 640px; margin-bottom: clamp(2rem, 4vw, 3.25rem); }
+.eyebrow {
+  display: inline-block; font-family: var(--font-head); font-weight: 700;
+  font-size: var(--fs-eyebrow); letter-spacing: .18em; text-transform: uppercase;
+  color: var(--c-accent-strong); margin-bottom: .75rem;
+}
+.section--dark .eyebrow { color: var(--c-accent); }
+.section-title {
+  font-family: var(--font-head); font-weight: 800; font-size: var(--fs-h2);
+  line-height: 1.1; letter-spacing: -.02em;
+}
+.section-title .script {
+  font-family: var(--font-display); font-weight: 400; color: var(--c-accent);
+  letter-spacing: 0; font-size: 1.15em;
+}
+.section-desc { color: var(--c-slate); font-size: var(--fs-lead); margin-top: 1rem; }
+.section--dark .section-desc { color: var(--c-slate-soft); }
 
     /* ========================================================================
        4. BOTONES
@@ -140,57 +150,61 @@
     .btn--dark { background: var(--c-dark); color: var(--c-light); }
     .btn--dark:hover { background: var(--c-slate); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
-    /* ========================================================================
-       5. HEADER / NAVBAR  (sticky + menú móvil)
-       ======================================================================== */
-    .header {
-      position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
-      display: flex; align-items: center;
-      background: rgba(25,16,34,0); transition: background-color .35s var(--ease), height .35s var(--ease),
-                  box-shadow .35s var(--ease), backdrop-filter .35s var(--ease);
-    }
-    /* Estado tras hacer scroll: fondo sólido y compacto */
-    .header.is-scrolled {
-      height: 60px; background: rgba(25,16,34,.92);
-      -webkit-backdrop-filter: saturate(160%) blur(10px);
-      backdrop-filter: saturate(160%) blur(10px);
-      box-shadow: 0 8px 30px rgba(0,0,0,.25);
-    }
-    .header__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+/* ==========================================================
+  5. HEADER / NAVBAR  (sticky + menú móvil)
+========================================================== */
+.header {
+  position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+  display: flex; align-items: center;
+  background: rgba(25,16,34,0);
+  transition: background-color .35s var(--ease), height .35s var(--ease), box-shadow .35s var(--ease);
+}
+/* Estado tras hacer scroll: fondo sólido y compacto.
+    IMPORTANTE: aquí NO se usa backdrop-filter. backdrop-filter (igual que
+    transform o filter) convierte al header en el "bloque contenedor" de sus
+    hijos position:fixed; eso atraparía el panel del menú dentro de los 60px
+    del header en lugar de ocupar toda la altura de la ventana. Un fondo casi
+    opaco logra un efecto similar sin provocar ese problema. */
+.header.is-scrolled {
+  height: 60px; background: rgba(25,16,34,.96);
+  box-shadow: 0 8px 30px rgba(0,0,0,.28);
+  border-bottom: 1px solid var(--c-dark-3);
+}
+.header__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 
-    .logo {
-      font-family: var(--font-display); font-size: 1.9rem; color: var(--c-light);
-      line-height: 1; display: inline-flex; align-items: baseline; gap: .1rem;
-    }
-    .logo b { color: var(--c-accent); font-weight: 400; }
+.logo {
+  font-family: var(--font-display); font-size: 1.9rem; color: var(--c-light);
+  line-height: 1; display: inline-flex; align-items: baseline; gap: .1rem;
+}
+.logo b { color: var(--c-accent); font-weight: 400; }
 
-    .nav__list { display: flex; align-items: center; gap: 2rem; }
-    .nav__link {
-      position: relative; font-family: var(--font-head); font-weight: 500;
-      font-size: .95rem; color: var(--c-light); padding: .35rem 0; opacity: .82;
-      transition: opacity .25s var(--ease);
-    }
-    .nav__link::after {
-      content: ""; position: absolute; left: 0; bottom: -2px; height: 2px; width: 0;
-      background: var(--c-accent); transition: width .3s var(--ease);
-    }
-    .nav__link:hover { opacity: 1; }
-    /* aria-current="true" lo aplica el JS para marcar la sección activa */
-    .nav__link[aria-current="true"] { opacity: 1; }
-    .nav__link[aria-current="true"]::after { width: 100%; }
+.nav__list { display: flex; align-items: center; gap: 2rem; }
+.nav__link {
+  position: relative; font-family: var(--font-head); font-weight: 500;
+  font-size: .95rem; color: var(--c-light); padding: .35rem 0; opacity: .82;
+  transition: opacity .25s var(--ease);
+}
+.nav__link::after {
+  content: ""; position: absolute; left: 0; bottom: -2px; height: 2px; width: 0;
+  background: var(--c-accent); transition: width .3s var(--ease);
+}
+.nav__link:hover { opacity: 1; }
+/* aria-current="true" lo aplica el JS para marcar la sección activa */
+.nav__link[aria-current="true"] { opacity: 1; }
+.nav__link[aria-current="true"]::after { width: 100%; }
 
-    .nav__cta { margin-left: .5rem; padding: .6rem 1.25rem; font-size: .9rem; }
-    /* El CTA es un botón: se excluye del subrayado animado de .nav__link */
-    .nav__cta::after { display: none; }
+.nav__cta { margin-left: .5rem; padding: .6rem 1.25rem; font-size: .9rem; }
+/* El CTA es un botón: se excluye del subrayado animado de .nav__link */
+.nav__cta::after { display: none; }
 
-    /* Botón hamburguesa (visible solo en móvil/tablet).
-       position + z-index alto: debe quedar SIEMPRE por encima del panel y del
-       overlay para que la X de cierre sea visible y clicable. */
-    .nav-toggle { display: none; position: relative; z-index: 110; width: 44px; height: 44px; align-items: center; justify-content: center; }
-    .nav-toggle svg { width: 26px; height: 26px; color: var(--c-light); }
-    .nav-toggle .icon-close { display: none; }
-    .nav-toggle[aria-expanded="true"] .icon-open  { display: none; }
-    .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+/* Botón hamburguesa (visible solo en móvil/tablet).
+    position + z-index alto: debe quedar SIEMPRE por encima del panel y del
+    overlay para que la X de cierre sea visible y clicable. */
+.nav-toggle { display: none; position: relative; z-index: 110; width: 44px; height: 44px; align-items: center; justify-content: center; }
+.nav-toggle svg { width: 26px; height: 26px; color: var(--c-light); }
+.nav-toggle .icon-close { display: none; }
+.nav-toggle[aria-expanded="true"] .icon-open  { display: none; }
+.nav-toggle[aria-expanded="true"] .icon-close { display: block; }
 
     /* ========================================================================
        6. HERO  ·  Slider (crossfade) + barra híbrida + parallax
